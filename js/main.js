@@ -22,7 +22,16 @@ $(document).ready(function(){
 		$(".owl-carousel-main-slider").owlCarousel({
 			items:1,
 			loop:true,
-			/*nav:true*/
+			// nav:true,
+			navText: ['',''],
+			responsive : {
+				0 : {
+					nav: false
+				},
+				992 : {
+					nav: true
+				}
+			}
 		});
 	}
 	

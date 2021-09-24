@@ -16,6 +16,19 @@ input, textarea {
     font-family: 'Montserrat', sans-serif;
 }
 
+.g-wrap {
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.g-wrap .outer-bg {
+    max-width: 1920px;
+    background: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -841,8 +854,74 @@ a.btn_print:hover:before {
     color: #0065AD;
 }
 
-
 .owl-carousel-main-slider {
+
+}
+
+.owl-carousel-main-slider .owl-nav {
+
+}
+
+.owl-carousel-main-slider .owl-prev,
+.owl-carousel-main-slider .owl-next {
+    display: block;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+    background: rgba(255,255,255,0);
+    text-decoration: none;
+    color: #fff;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+
+.owl-carousel-main-slider .owl-prev {
+    left: calc(50% - 440px);
+}
+
+@media (min-width: 1200px) {
+
+    .owl-carousel-main-slider .owl-prev {
+        left: calc(50% - 520px);
+    }
+
+}
+
+.owl-carousel-main-slider .owl-next {
+    left: calc(50% + 440px);
+}
+
+@media (min-width: 1200px) {
+
+    .owl-carousel-main-slider .owl-next {
+        left: calc(50% + 520px);
+    }
+
+}
+
+.owl-carousel-main-slider .owl-prev:before,
+.owl-carousel-main-slider .owl-next:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    background: url(../svg/arrow_right_white.svg) 50% 50% no-repeat;
+}
+
+.owl-carousel-main-slider .owl-prev:before {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.owl-carousel-main-slider .owl-next:before {
+
 }
 
 .owl-carousel-main-slider .owl-dots {
@@ -878,6 +957,14 @@ a.btn_print:hover:before {
 }
 
 .main_slide .container_wrapper .container {
+
+}
+
+@media (min-width: 992px) {
+    .main_slide .container_wrapper .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 .main_slide .slide_subtitle {
@@ -4895,10 +4982,3 @@ footer {
 @media only screen and (max-width: 330px) {
 
 }
-
-
-
-
-
-
-
