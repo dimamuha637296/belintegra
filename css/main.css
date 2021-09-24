@@ -890,6 +890,20 @@ a.btn_print:hover:before {
 
 }
 
+@media (min-width: 1400px) {
+
+    .owl-carousel-main-slider .owl-prev {
+        left: calc(50% - 620px);
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .owl-carousel-main-slider .owl-prev {
+        left: calc(50% - 715px);
+    }
+}
+
 .owl-carousel-main-slider .owl-next {
     left: calc(50% + 440px);
 }
@@ -899,7 +913,20 @@ a.btn_print:hover:before {
     .owl-carousel-main-slider .owl-next {
         left: calc(50% + 520px);
     }
+}
 
+@media (min-width: 1400px) {
+
+    .owl-carousel-main-slider .owl-next {
+        left: calc(50% + 620px);
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .owl-carousel-main-slider .owl-next {
+        left: calc(50% + 715px);
+    }
 }
 
 .owl-carousel-main-slider .owl-prev:before,
@@ -961,9 +988,18 @@ a.btn_print:hover:before {
 }
 
 @media (min-width: 992px) {
+
     .main_slide .container_wrapper .container {
         padding-left: 100px;
         padding-right: 100px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .main_slide .container_wrapper .container {
+        padding-right: var(--bs-gutter-x,.75rem);
+        padding-left: var(--bs-gutter-x,.75rem);
     }
 }
 
@@ -1082,7 +1118,7 @@ a.btn_print:hover:before {
 }
 
 .mp_catalog_menu_main {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -1216,9 +1252,9 @@ a.btn_print:hover:before {
 
 .mp_product_search_form .title {
     font-weight: 800;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 120%;
-    padding-bottom: 42px;
+    padding-bottom: 30px;
 }
 
 .form_field {
@@ -1226,7 +1262,7 @@ a.btn_print:hover:before {
 }
 
 .form_field.form_btn {
-    margin-top: 55px;
+    margin-top: 45px;
 }
 
 .form_field.form_btn input {
@@ -1241,6 +1277,21 @@ a.btn_print:hover:before {
     padding: 18px 10px;
     margin-bottom: 10px;
 }
+
+.form_field.form_input input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #363740;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form_field
 
 .mp_catalog_menu_main_mob {
 }
@@ -4253,10 +4304,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-    .mp_catalog_menu_main .col-lg-2 {
-        flex: 0 0 auto;
-        width: 20%;
-    }
 
     .mp_banners-col-lg-5 {
         flex: 0 0 auto;
