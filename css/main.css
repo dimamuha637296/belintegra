@@ -1139,6 +1139,20 @@ a.btn_print:hover:before {
     margin-bottom: 20px;
 }
 
+@media (max-width: 1399px) {
+
+    .mp_catalog_menu_main {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .mp_catalog_menu_main {
+        font-size: 12px;
+    }
+}
+
 .mp_catalog_menu_main a {
     display: block;
     text-align: center;
@@ -1292,6 +1306,13 @@ a.btn_print:hover:before {
     color: #ffffff;
     padding: 18px 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 1199px) {
+
+    .form_field.form_btn input {
+        font-size: 17px;
+    }
 }
 
 .form_field.form_input input {
@@ -3222,6 +3243,14 @@ footer {
     padding-left: 210px;
     padding-right: 210px;
     text-align: justify;
+}
+
+@media (max-width: 991px) {
+
+    .portfolio_item_info {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .portfolio_item-slider_wrapper {
