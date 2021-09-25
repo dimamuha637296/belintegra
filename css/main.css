@@ -86,6 +86,15 @@ h2, .h2 {
     text-transform: uppercase;
 }
 
+h3, .h3 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.4rem;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+}
+
 .bigger_title h1, .bigger_title .h1 {
     font-size: 34px;
     line-height: 130%;
@@ -93,8 +102,15 @@ h2, .h2 {
 
 .bigger_title h2, .bigger_title .h2 {
     font-size: 25px;
+    line-height: 130%;
+    font-weight: 800;
+}
+
+.bigger_title h3, .bigger_title .h3 {
+    font-size: 25px;
     line-height: 140%;
     font-weight: 800;
+    text-transform: none;
 }
 
 .btn_blue {
@@ -399,7 +415,7 @@ a.btn_print:hover:before {
 }
 
 .mob_main_menu > ul > li.with_subs.active > a:after {
-    transform: rotate(180deg;
+    transform: rotate(180deg);
 )
 }
 
@@ -2200,7 +2216,7 @@ a.btn_print:hover:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: url() 0 0 no-repeat;
+    background: 0 0 no-repeat;
 }
 
 .category_short .docs .item a {
@@ -2707,22 +2723,58 @@ footer {
 .contacts_wrapper {
 }
 
+.contacts_row {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 78px;
+}
+
+.contacts_row [class^='col'] {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .contacts_text {
-    padding-bottom: 50px;
-    padding-left: 30px;
+    /*padding-bottom: 50px;*/
+}
+
+.contacts_text h2 {
+    padding-bottom: 40px;
+}
+
+.contacts_text h3 {
+
 }
 
 .contacts_text ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 15px;
+    padding-bottom: 28px;
 }
 
 .contacts_text ul li {
-    padding-bottom: 20px;
+    padding-bottom: 21px;
     font-size: 18px;
     line-height: 140%;
+}
+
+.contacts_text ul li:last-child {
+    padding-bottom: 0;
+}
+
+.contacts_text ul li b {
+    font-weight: 700;
+    letter-spacing: 0.004em;
+}
+
+.contacts_text ul li > * {
+    display: table;
+    margin-bottom: 16px;
+}
+
+.contacts_text ul li > :last-child {
+    margin-bottom: 0;
 }
 
 .contacts_text ul li a {
@@ -2742,6 +2794,18 @@ footer {
     background-image: url(../svg/icon_phone_black.svg);
 }
 
+.contacts_text .icon_skype:before {
+    background-image: url(../svg/icon_skype_black.svg);
+}
+
+.contacts_text .icon_calc:before {
+    background-image: url(../svg/icon_calc_black.svg);
+}
+
+.contacts_text .icon_screen:before {
+    background-image: url(../svg/icon_screen_black.svg);
+}
+
 .contact_form {
     padding: 30px;
     background: #FFFFFF;
@@ -2758,7 +2822,7 @@ footer {
 
 .contact_map_wrapper #ymap {
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 .downloads_wrapper {
