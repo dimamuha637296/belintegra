@@ -405,7 +405,7 @@ a.btn_print:hover:before {
     height: 100vh;
     overflow: auto;
     z-index: 10000;
-    padding: 15px;
+    padding: 10px 15px;
     transform: scale(0, 1);
     transition: 0.3s;
 }
@@ -419,62 +419,72 @@ a.btn_print:hover:before {
 
 .mob_main_menu > ul {
     margin: 0;
-    padding: 10px 0;
+    padding: 15px 0;
     list-style: none;
 }
 
 .mob_main_menu > ul > li {
     display: block;
-    padding: 10px 0;
+    padding: 6px 0;
 }
 
 .mob_main_menu ul li a {
-    display: block;
-    padding: 10px 0;
+    display: inline-block;
+    padding: 9px 0;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
     text-decoration: none;
 }
 
-.mob_main_menu > ul > li.with_subs > a {
-    display: inline-block;
-    position: relative;
-    padding-right: 25px;
-}
-
-.mob_main_menu > ul > li.with_subs > a:after {
+.mob_main_menu ul li .icon {
     content: '';
-    display: block;
+    display: inline-block;
     width: 14px;
     height: 7px;
-    background: url(../svg/filter_arrow_down.svg) 50% 50% no-repeat;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -3px;
+    background: url(../svg/arrow_btn_white.svg) 50% 50% no-repeat;
     transition: 0.3s;
-}
-
-.mob_main_menu > ul > li.with_subs.active > a:after {
+    cursor: pointer;
+    margin-left: 6px;
+    vertical-align: 2px;
     transform: rotate(180deg);
-)
 }
 
-.mob_main_menu ul li ul.mob_subs {
-    display: none;
-    color: #ffffff;
-    list-style-type: disc;
+.mob_main_menu ul li .icon.collapsed {
+    transform: rotate(0deg);
 }
 
-.mob_main_menu ul li.active ul.mob_subs {
+.mob_main_menu .menu_level_2 {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mob_main_menu .item_2 {
+    padding-left: 4px;
+}
+
+.mob_main_menu .item_2 a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.6;
+    text-transform: none;
+    position: relative;
+    padding: 6px 0 5px 24px;
+}
+
+.mob_main_menu .item_2 a:before {
+    content: '';
     display: block;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 14px;
+    top: 16px;;
+    background: #fff;
 }
 
-.mob_main_menu ul li ul.mob_subs li {
-}
-
-.mob_main_menu ul li ul.mob_subs a {
+.mob_subs a {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;

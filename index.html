@@ -23,6 +23,8 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/collapse.js"></script>
 
 </head>
 <body>
@@ -959,14 +961,14 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="form_field form_input">
-														<input type="text" placeholder="Мощность от">
+                                                        <input type="text" placeholder="Мощность от">
                                                     </div>
                                                 </div>
-												<div class="col-6">
+                                                <div class="col-6">
                                                     <div class="form_field form_input">
                                                         <input type="text" placeholder="Мощность до">
-													</div>
-												</div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-12">
                                                     <div class="form_field form_selector">
                                                         <select class="styler">
@@ -1470,7 +1472,7 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
             </section>
 
             <section class="block mp_downloads_wrapper">
@@ -1666,16 +1668,66 @@
             </div>
             <div class="mob_top_menu_wrapper bg_blue close_btn_target">
                 <div class="">
-                    <a href=""><img src="svg/close.svg" alt="" title="закрыть" class="close_btn img-fluid"></a></div>
+                    <a href=""><img src="svg/close.svg" alt="" title="закрыть" class="close_btn img-fluid"></a>
+                </div>
                 <nav class="mob_main_menu font2">
                     <ul>
-                        <li><a href="">Каталог</a></li>
-                        <li><a href="">акредитованная лаборатория</a></li>
-                        <li><a href="">скачать</a></li>
-                        <li><a href="">Компания</a></li>
-                        <li><a href="">Решения</a></li>
-                        <li><a href="">контакты</a></li>
-                        <li><a href="">портфолио</a></li>
+                        <li>
+                            <a href="">Каталог</a>
+                            <div class="icon collapsed" data-toggle="collapse" data-target="#accordion-m-12" aria-expanded="true"></div>
+                            <div class="collapse" id="accordion-m-12" style="">
+                                <ul class="menu_level_2 list-reset">
+                                    <li class="item_2">
+                                        <a href="#">
+                                            <span>Светодиодная продукция</span>
+                                        </a>
+                                    </li>
+                                    <li class="item_2">
+                                        <a href="#">
+                                            <span>Люминисцентная продукция</span>
+                                        </a>
+                                    </li>
+                                    <li class="item_2">
+                                        <a href="#">
+                                            <span>Комплектное электрощитовое оборудование</span>
+                                        </a>
+                                    </li>
+                                    <li class="item_2">
+                                        <a href="#">
+                                            <span>Оборудование электрощитовое</span>
+                                        </a>
+                                    </li>
+                                    <li class="item_2">
+                                        <a href="#">
+                                            <span>Ящики почтовые</span>
+                                        </a>
+                                    </li>
+                                    <li class="item_2">
+                                        <a href="#">
+                                            <span>Строительные лючки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">акредитованная лаборатория</a>
+                        </li>
+                        <li>
+                            <a href="">скачать</a>
+                        </li>
+                        <li>
+                            <a href="">Компания</a>
+                        </li>
+                        <li>
+                            <a href="">Решения</a>
+                        </li>
+                        <li>
+                            <a href="">контакты</a>
+                        </li>
+                        <li>
+                            <a href="">портфолио</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -1740,7 +1792,7 @@
         </div>
         <script>
             $('.open-popup-link').magnificPopup({
-                type:'inline',
+                type: 'inline',
                 midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             });
         </script>
