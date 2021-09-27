@@ -2488,7 +2488,8 @@ a.favorite.active:after {
 }
 
 .show_full {
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .show_full a {
@@ -2513,10 +2514,6 @@ a.favorite.active:after {
     margin-top: -4px;
     background: url(../svg/icon_arrow.svg) 0 50% no-repeat;
     transition: 0.3s;
-}
-
-.show_full a:hover:before {
-    transform: rotate(180deg)
 }
 
 .show_full a.active:before {
@@ -4570,8 +4567,24 @@ footer {
     background: url(../svg/close_black.svg) 50% 50% no-repeat;
 }
 
-.popup_order_1 {
+.popup_order {
     padding: 60px 110px 60px;
+}
+
+@media (max-width: 991px) {
+    .popup_order {
+        padding: 40px 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .popup_order {
+        padding: 40px 20px;
+    }
+}
+
+.popup_order_1 {
+    padding: 60px 60px 60px;
 }
 
 @media (max-width: 991px) {
@@ -4584,6 +4597,39 @@ footer {
     .popup_order_1 {
         padding: 40px 20px;
     }
+}
+
+.popup_order__col.popup_order__col--title {
+    flex: 0 0 30.2%;
+    max-width: 30.2%;
+}
+
+.popup_order__col.popup_order__col--data {
+    flex: 0 0 69.8%;
+    max-width: 69.8%;
+}
+
+.popup_order__row-title {
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.34;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+.popup_order__row-radio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -17px;
+    margin-right: -17px;
+    margin-bottom: -5px;
+}
+
+.popup_order__col-radio {
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-bottom: 5px;
 }
 
 .card_orders {
@@ -4709,6 +4755,51 @@ footer {
 .sort-by__select.jq-selectbox li:hover {
     background: #00679A;
     color: #fff;
+}
+
+.radio-wrap {
+
+}
+
+.radio-wrap input[type="radio"] {
+    display: none;
+}
+
+.radio-wrap label {
+    position: relative;
+    padding-left: 27px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+.radio-wrap label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+.radio-wrap label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.radio-wrap input[type="radio"]:checked + label:after {
+    background: #0a53be;
 }
 
 @media (min-width: 992px) {
