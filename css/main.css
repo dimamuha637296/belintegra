@@ -67,8 +67,8 @@ a:hover {
 h1, .h1 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 800;
-    font-size: 34px;
-    line-height: 130%;
+    font-size: 45px;
+    line-height: 1.2;
     padding-bottom: 40px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -79,8 +79,8 @@ h1, .h1 {
 h2, .h2 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 1.6rem;
+    font-size: 34px;
+    line-height: 1.21;
     padding-bottom: 20px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -89,29 +89,47 @@ h2, .h2 {
 h3, .h3 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 1.4rem;
+    font-size: 25px;
+    line-height: 1.2;
     padding-bottom: 24px;
     margin-bottom: 0;
 }
 
-.bigger_title h1, .bigger_title .h1 {
-    font-size: 34px;
-    line-height: 130%;
+h4, .h4 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin-bottom: 0;
 }
 
-.bigger_title h2, .bigger_title .h2 {
-    font-size: 25px;
-    line-height: 130%;
+h5, .h5 {
+    font-family: 'Gilroy', sans-serif;
     font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    padding-bottom: 24px;
+    margin-bottom: 0;
 }
 
-.bigger_title h3, .bigger_title .h3 {
-    font-size: 25px;
-    line-height: 140%;
-    font-weight: 800;
-    text-transform: none;
-}
+/*.bigger_title h1, .bigger_title .h1 {*/
+/*    font-size: 34px;*/
+/*    line-height: 130%;*/
+/*}*/
+
+/*.bigger_title h2, .bigger_title .h2 {*/
+/*    font-size: 25px;*/
+/*    line-height: 130%;*/
+/*    font-weight: 800;*/
+/*}*/
+
+/*.bigger_title h3, .bigger_title .h3 {*/
+/*    font-size: 25px;*/
+/*    line-height: 140%;*/
+/*    font-weight: 800;*/
+/*    text-transform: none;*/
+/*}*/
 
 .fade {
     transition: opacity .15s linear;
