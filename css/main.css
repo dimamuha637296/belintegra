@@ -2009,7 +2009,8 @@ a.btn_print:hover:before {
     display: block;
     font-size: 10px;
     font-weight: 300;
-    color: #151515;
+    color: #000;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -4617,6 +4618,78 @@ footer {
     line-height: 120%;
     text-align: center;
     letter-spacing: 0.004em;
+    color: #fff;
+}
+
+.sort-by {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.sort-by__title {
+    display: inline-block;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.43;
+    letter-spacing: 0.004em;
+    color: #000;
+    margin-right: 7px;
+}
+
+.sort-by__select {
+    display: inline-block;
+    width: 127px;
+    font-size: 14px;
+}
+
+.sort-by__select .jq-selectbox__select {
+    height: 20px;
+    padding: 0 10px 0 0;
+    background: transparent;
+}
+
+.sort-by__select .jq-selectbox__select-text {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.004em;
+    height: 20px;
+}
+
+.sort-by__select .jq-selectbox__trigger {
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 20px;
+    background: url(../svg/select_black.svg) 50% 50% no-repeat;
+}
+
+.sort-by__select .jq-selectbox__dropdown {
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 11px;
+}
+
+.sort-by__select.jq-selectbox li {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.sort-by__select.jq-selectbox li.selected {
+    background: transparent;
+    color: #00679A;
+}
+
+.sort-by__select.jq-selectbox li:hover {
+    background: #00679A;
     color: #fff;
 }
 
