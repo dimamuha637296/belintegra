@@ -1041,7 +1041,9 @@ a.btn_print:hover:before {
     position: absolute;
     bottom: 50px;
     text-align: center;
-    width: 100%;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .owl-carousel-main-slider .owl-dots .owl-dot {
@@ -4451,16 +4453,17 @@ footer {
     width: 48px;
     height: 48px;
     position: relative;
-    background: #EEF2F4;
+    background: #00679A;
     transition: 0.3s;
     margin-bottom: 10px;
     color: transparent;
     font-size: 0;
     text-decoration: none;
+    opacity: 1;
 }
 
 .scroll_block a:hover {
-    background: #00679A;
+    opacity: .8;
 }
 
 .scroll_block a:before {
@@ -4650,13 +4653,27 @@ footer {
     max-width: 30.2%;
 }
 
+@media (max-width: 767px) {
+    .popup_order__col.popup_order__col--title {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 .popup_order__col.popup_order__col--data {
     flex: 0 0 69.8%;
     max-width: 69.8%;
 }
 
+@media (max-width: 767px) {
+    .popup_order__col.popup_order__col--data {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 .popup_order__row {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .popup_order__row-title {
@@ -4666,6 +4683,7 @@ footer {
     line-height: 1.34;
     letter-spacing: -0.3px;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .popup_order__row-radio {
