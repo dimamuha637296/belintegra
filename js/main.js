@@ -434,4 +434,71 @@ $(document).ready(function(){
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
 
+	!function () {
+		'use strict';
+
+		function setSimilarSlidesHeight(slider) {
+			'use strict';
+			var slides = slider.find('.slide');
+			if (slides.length > 0) {
+				var maxHeight = 0;
+				slides.each(function () {
+					var slide = $(this);
+					slide.css('height', '');
+					var slideHeight = slide.outerHeight();
+					if (maxHeight < slideHeight) {
+						maxHeight = slideHeight;
+					}
+				});
+				slides.css('height', maxHeight);
+			}
+		}
+
+		function setSlidesHeight(slider) {
+			if (typeof setSimilarSlidesHeight === 'function') {
+				setSimilarSlidesHeight(slider);
+			}
+		}
+
+		//https://github.com/kenwheeler/slick/
+		function initSlider() {
+			var block = $('.sl-products');
+			if (!block.length || !$.fn.slick) {
+				return false;
+			}
+			block.each(function () {
+				var self = $(this);
+				var slider = self.find('.slider');
+				var slidesLength = slider.find('.slide').length;
+				var pager = self.find('.js-sl-pager');
+				var sliderWrap = self.find('.wrap');
+				var prev = self.find('.prev');
+				var next = self.find('.next');
+				sliderWrap.removeClass('inited-not');
+				slider.on('setPosition', function () {
+					setSlidesHeight(slider);
+				});
+				slider.slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					adaptiveHeight: false, // true - height: auto
+					autoplay: false,
+					autoplaySpeed: 7000,
+					speed: 500,
+					arrows: slidesLength > 1,
+					dots: slidesLength > 1,
+					appendDots: pager,
+					dotsClass: 'list-reset', // pager class
+					nextArrow: next,
+					prevArrow: prev
+				});
+				sliderWrap.addClass('inited');
+			});
+		}
+
+		$(function () {
+			initSlider();
+		});
+	}();
+
 })
