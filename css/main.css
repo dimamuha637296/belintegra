@@ -181,7 +181,7 @@ h5, .h5 {
     padding: 20px;
     font-size: 18px;
     line-height: 122%;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.7px;
 }
 
 a.btn_blue {
@@ -621,7 +621,7 @@ a.btn_print:hover:before {
 
 .top_icons a.top_icon {
     display: inline-block;
-    margin-left: 18px;
+    margin-left: 15px;
     width: 27px;
     height: 24px;
     background-position: 50% 50%;
@@ -660,9 +660,17 @@ a.btn_print:hover:before {
     color: #000000;
     line-height: 1.4rem;
     font-weight: 300;
-    padding-left: 31px;
-    padding-right: 22px;
+    padding-left: 18px;
+    /*background: url(../svg/pic_down.svg) right center no-repeat;*/
+}
+
+.top_phone .top_phone_icon {
+    display: inline-block;
+    vertical-align: -5px;
+    width: 17px;
+    height: 23px;
     background: url(../svg/pic_down.svg) right center no-repeat;
+    padding-left: 8px;
 }
 
 .top_phone > a {
@@ -781,7 +789,7 @@ a.btn_print:hover:before {
 .top_menu ul.top_main_menu > li > a {
     display: inline-block;
     text-decoration: none;
-    padding: 15px;
+    padding: 15px 15px 16px;
     color: #ffffff;
 }
 
@@ -792,7 +800,7 @@ a.btn_print:hover:before {
     z-index: 1000;
     background: #ffffff;
     list-style: none;
-    padding: 30px 40px;
+    padding: 19px 40px 15px;
     margin: 0;
     opacity: 0;
     transition: .3s;
@@ -806,15 +814,16 @@ a.btn_print:hover:before {
 }
 
 .top_menu ul.top_main_menu > li > ul.submenu > li {
-    padding: 10px 0;
+    padding: 22px 0 22px;
 }
 
 .top_menu ul.top_main_menu > li > ul.submenu a {
     color: #000000;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -4538,16 +4547,30 @@ footer {
     margin: 20px auto;
 }
 
+.popup .btn_blue {
+    min-width: 353px;
+}
+
+@media (max-width: 575px) {
+
+    .popup .btn_blue {
+        min-width: inherit;
+        max-width: 100%;
+    }
+}
+
 .popup__title {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 25px;
     line-height: 120%;
     letter-spacing: 0.004em;
     text-transform: uppercase;
     text-align: center;
     color: #000000;
     padding-bottom: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .popup__subtitle {
@@ -4559,7 +4582,7 @@ footer {
     text-align: center;
     letter-spacing: -0.3px;
     color: #000000;
-
+    margin-bottom: 49px;
 }
 
 .mfp-close-btn-in .mfp-close {
@@ -4600,7 +4623,7 @@ footer {
 }
 
 .popup_order_1 {
-    padding: 60px 60px 60px;
+    padding: 60px 60px 40px;
 }
 
 @media (max-width: 991px) {

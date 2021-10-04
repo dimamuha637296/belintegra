@@ -356,7 +356,7 @@ $(document).ready(function(){
 		$(this).parents(".selector_wrapper").toggleClass("active");
 	})
 	
-	$(document).on("click", ".top_phone>a", function(e){
+	$(document).on("click", ".top_phone .top_phone_icon", function(e){
 		e.preventDefault();
 		$(this).parents(".top_phone").toggleClass("active");
 		if($(this).parents(".top_phone").hasClass("active")) {
