@@ -1862,12 +1862,12 @@
             </div>
             <div class="popup_order__row row">
                 <div class="popup_order__col popup_order__col--title">
-                    <div class="popup_order__row-title">E-mail</div>
+                    <div class="popup_order__row-title">Номер телефона</div>
                 </div>
                 <div class="popup_order__col popup_order__col--data">
                     <div class="row">
                         <div class="col-12">
-                            <input type="email" name="" class="inp_txt font2" placeholder="E-mail">
+                            <input type="tel" name="" class="inp_txt font2" placeholder="Номер телефона">
                         </div>
                     </div>
                 </div>
@@ -1879,7 +1879,13 @@
                 <div class="popup_order__col popup_order__col--data">
                     <div class="row">
                         <div class="col-12">
-                            <input type="text" name="" class="inp_txt font2" placeholder="Текст сообщения">
+                            <select class="styler  required">
+                                <option value="">Выберите тему обращения</option>
+                                <option value="HJ48KSM36">Тема 1</option>
+                                <option value="HJ48KSM36">Тема 2</option>
+                                <option value="HJ48KSM36">Тема 3</option>
+                                <option value="HJ48KSM36">Тема 4</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -2173,7 +2179,7 @@
             </div>
             <div class="popup_order__row row">
                 <div class="popup_order__col popup_order__col--title">
-                    <div class="popup_order__row-title">Данные о освещенности</div>
+                    <div class="popup_order__row-title">Данные об освещенности</div>
                 </div>
                 <div class="popup_order__col popup_order__col--data">
                     <div class="row">
@@ -2181,6 +2187,7 @@
                             <label class="inp_file_wrap">
                                 <input type="file" name="" class="inp_txt font2" placeholder="Схема расположения оборудования (.dwg)">
                             </label>
+                            <div class="inp_file_comment">*Схема расположения существующих светильников</div>
                         </div>
                     </div>
                 </div>
@@ -2379,6 +2386,27 @@
             </div>
             <div class="popup_order__row row">
                 <div class="popup_order__col popup_order__col--title">
+                    <div class="popup_order__row-title">Требуемый уровень освещенности</div>
+                </div>
+                <div class="popup_order__col popup_order__col--data">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" name="" class="inp_txt font2" placeholder="Значение освещенности (мин. или сред.), лк">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="" class="inp_txt font2" placeholder="Тип рабочей плоскости">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="" class="inp_txt font2" placeholder="Высота раб.плоскости, м">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="" class="inp_txt font2" placeholder="Нахождение контрольных точек для замера">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_order__row row">
+                <div class="popup_order__col popup_order__col--title">
                     <div class="popup_order__row-title">Коэффициент запаса</div>
                 </div>
                 <div class="popup_order__col popup_order__col--data">
@@ -2505,7 +2533,7 @@
             </div>
             <div class="popup_order__row row">
                 <div class="popup_order__col popup_order__col--title">
-                    <div class="popup_order__row-title">Данные о освещенности*</div>
+                    <div class="popup_order__row-title">Данные об освещенности*</div>
                 </div>
                 <div class="popup_order__col popup_order__col--data">
                     <div class="row">
@@ -2513,6 +2541,7 @@
                             <label class="inp_file_wrap">
                                 <input type="file" name="" class="inp_txt font2" placeholder="Данные о освещенности*">
                             </label>
+                            <div class="inp_file_comment">*Схема расположения существующих светильников</div>
                         </div>
                     </div>
                 </div>
@@ -2527,6 +2556,7 @@
                             <label class="inp_file_wrap">
                                 <input type="file" name="" class="inp_txt font2" placeholder="Концепция освещения*">
                             </label>
+                            <div class="inp_file_comment">*Требования к внешнему виду светильника, цвету корпуса, дизайн-проект</div>
                         </div>
                     </div>
                 </div>
