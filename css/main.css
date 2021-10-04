@@ -4723,6 +4723,34 @@ footer {
     margin-top: 10px;
 }
 
+.popup_thanks {
+    max-width: 640px;
+    padding: 100px 60px 82px;
+}
+
+@media (max-width: 575px) {
+
+    .popup_thanks {
+        max-width: 640px;
+        padding: 50px 20px 20px;
+    }
+}
+
+.popup_thanks .popup__title {
+    font-size: 34px;
+}
+
+@media (max-width: 575px) {
+
+    .popup_thanks .popup__title {
+        font-size: 25px;
+    }
+}
+
+.popup_thanks .popup__icon {
+    margin-bottom: 21px;
+}
+
 .popup_order__col.popup_order__col--title {
     flex: 0 0 31%;
     max-width: 31%;
