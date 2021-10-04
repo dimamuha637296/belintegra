@@ -1815,7 +1815,9 @@ a.btn_print:hover:before {
     transition: 0.3s;
 }
 
-.partners-slider-img:hover { /*-webkit-filter: grayscale(0%);filter: grayscale(0%);opacity:1;*/
+.partners-slider-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .breadcrumbs_wrapper {

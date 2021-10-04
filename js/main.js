@@ -38,6 +38,8 @@ $(document).ready(function(){
 	if ($(".owl-carousel-partners-slider").length > 0) {
 		$(".owl-carousel-partners-slider").owlCarousel({
 			/*items:9,*/
+			autoplay:true,
+    		autoplayTimeout:2000,
 			responsive:{
 				0:{
 					items:1,
@@ -157,6 +159,8 @@ $(document).ready(function(){
 	if ($(".owl-carousel-mp2-slider").length > 0) {
 		$(".owl-carousel-mp2-slider").owlCarousel({
 			/*items:9,*/
+			autoplay: true,
+      		autoplayTimeout: 3000,
 			responsive:{
 				0:{
 					items:1,
