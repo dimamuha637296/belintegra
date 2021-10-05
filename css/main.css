@@ -4571,6 +4571,24 @@ footer {
     float: right;
 }
 
+@media (min-width: 992px) {
+
+    .mp_banners-col-lg-5 {
+        flex: 0 0 auto;
+        width: 37.57%;
+    }
+
+    .mp_banners-col-lg-7 {
+        flex: 0 0 auto;
+        width: 62.43%;
+    }
+
+    .related_products_list .col-lg-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
 .popup {
     position: relative;
     background: #FFF;
@@ -5307,10 +5325,6 @@ footer {
     margin-bottom: 40px;
 }
 
-.vacancies_item_wrapper {
-
-}
-
 .vacancies_info {
     font-size: 18px;
     line-height: 162%;
@@ -5448,21 +5462,68 @@ footer {
     }
 }
 
-@media (min-width: 992px) {
+.vacancy_info {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 162%;
+    color: #000000;
+    letter-spacing: 1.2px;
+    padding-left: 219px;
+    padding-right: 219px;
+}
 
-    .mp_banners-col-lg-5 {
-        flex: 0 0 auto;
-        width: 37.57%;
+@media (max-width: 1199px) {
+
+    .vacancy_info {
+        padding-left: 5px;
+        padding-right: 5px;
     }
+}
 
-    .mp_banners-col-lg-7 {
-        flex: 0 0 auto;
-        width: 62.43%;
+@media (max-width: 767px) {
+
+    .vacancy_info {
+        padding-top: 0;
+        font-size: 16px;
     }
+}
 
-    .related_products_list .col-lg-4 {
-        flex: 0 0 auto;
-        width: 20%;
+.vacancy__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    color: #000000;
+    margin-bottom: 49px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+
+    .vacancy__title {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+}
+
+.vacancy__cost {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1.3;
+    letter-spacing: -0.7px;
+    color: #000000;
+    text-align: right;
+    margin-bottom: 49px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+
+    .vacancy__cost {
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 11px;
     }
 }
 
