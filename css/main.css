@@ -5307,6 +5307,147 @@ footer {
     margin-bottom: 40px;
 }
 
+.vacancies_item_wrapper {
+
+}
+
+.vacancies_info {
+    font-size: 18px;
+    line-height: 162%;
+    color: #333333;
+    text-align: justify;
+    letter-spacing: 1.4px;
+    padding-top: 28px;
+    padding-bottom: 62px;
+    padding-left: 219px;
+    padding-right: 219px;
+}
+
+@media (max-width: 1199px) {
+
+    .vacancies_info {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .vacancies_info {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .vacancies_info {
+        font-size: 16px;
+    }
+}
+
+.vacancies-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vacancies-items__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    border-top: 1px solid #c4c4c4;
+}
+
+@media (max-width: 575px) {
+
+    .vacancies-items__item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.vacancies-items__item:last-child {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.vacancies-items__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 1.5px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+@media (max-width: 575px) {
+
+    .vacancies-items__title {
+        font-size: 18px;
+    }
+}
+
+.vacancies-items__address {
+    font-size: 16px;
+    line-height: 160%;
+    color: #777777;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 575px) {
+
+    .vacancies-items__address {
+        margin-bottom: 10px;
+    }
+}
+
+.vacancies-items__cost {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.3px;
+    color: #000000;
+    text-align: right;
+    margin-bottom: 11px;
+}
+
+@media (max-width: 575px) {
+
+    .vacancies-items__cost {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+.vacancies-items__text {
+    font-size: 18px;
+    line-height: 162%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 575px) {
+
+    .vacancies-items__text {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+.vacancies-items__link {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+    text-decoration-line: underline;
+    color: #00679A;
+}
+
+@media (max-width: 575px) {
+
+    .vacancies-items__link {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 992px) {
 
     .mp_banners-col-lg-5 {
