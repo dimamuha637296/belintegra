@@ -5527,6 +5527,57 @@ footer {
     }
 }
 
+.test-program_info {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 162%;
+    color: #000000;
+    letter-spacing: 1.2px;
+    padding-left: 219px;
+    padding-right: 219px;
+}
+
+@media (max-width: 1199px) {
+
+    .test-program_info {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .test-program_info {
+        padding-top: 0;
+        font-size: 16px;
+    }
+}
+
+.test-program_info p {
+    margin-bottom: 19px;
+}
+
+@media (max-width: 767px) {
+    .test-program_info p {
+        margin-bottom: 10px;
+    }
+}
+
+.test-program_info ol {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .test-program_info ol {
+        margin-bottom: 20px;
+    }
+}
+
+.test-program_info li {
+    line-height: 2;
+}
+
 @media only screen and (max-width: 991px) {
     /* до -lg */
     header {
@@ -5801,7 +5852,7 @@ footer {
         font-size: 20px;
         line-height: 130%;
         padding-bottom: 30px;
-        font-family: Gilroy;
+        font-family: 'Gilroy', sans-serif;
         font-weight: 800;
         text-transform: uppercase;
     }
