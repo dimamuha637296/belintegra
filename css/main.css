@@ -80,7 +80,7 @@ h2, .h2 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 800;
     font-size: 34px;
-    line-height: 1.21;
+    line-height: 1.3;
     padding-bottom: 20px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -111,6 +111,7 @@ h5, .h5 {
     line-height: 1.2;
     padding-bottom: 24px;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 /*.bigger_title h1, .bigger_title .h1 {*/
@@ -5273,6 +5274,37 @@ footer {
     line-height: 120%;
     letter-spacing: -0.3px;
     color: #FFFFFF;
+}
+
+.news_item_info {
+    font-size: 18px;
+    line-height: 162%;
+    color: #333333;
+    text-align: justify;
+    letter-spacing: 1.4px;
+    padding-top: 28px;
+    padding-bottom: 62px;
+    padding-left: 219px;
+    padding-right: 219px;
+}
+
+@media (max-width: 991px) {
+
+    .news_item_info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.news_item_info p {
+    margin-bottom: 29px;
+}
+
+.news_item_info_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
