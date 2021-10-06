@@ -5663,6 +5663,69 @@ footer {
     color: #000000;
 }
 
+.device_info {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 162%;
+    color: #000000;
+    letter-spacing: 1.2px;
+    padding-top: 20px;
+    padding-left: 219px;
+    padding-right: 219px;
+}
+
+@media (max-width: 1199px) {
+
+    .device_info {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .device_info {
+        padding-top: 0;
+        font-size: 16px;
+    }
+}
+
+.device_info p {
+    margin-bottom: 40px;
+}
+
+.device_info img {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .device_info img {
+        margin-bottom: 20зч;
+    }
+}
+
+.video-wrap {
+    margin-bottom: 32px;
+    height: 480px;
+}
+
+@media (max-width: 767px) {
+
+    .video-wrap {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.video-wrap iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
 @media only screen and (max-width: 991px) {
     /* до -lg */
     header {
