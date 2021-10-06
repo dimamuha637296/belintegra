@@ -1934,6 +1934,10 @@ a.btn_print:hover:before {
     opacity: 0.5;
 }
 
+.filter_wrapper .filter_block .filter_block_values label .sum {
+    color: rgba(255, 255, 255, 0.4);
+}
+
 .filter_wrapper .filter_block .filter_block_title {
     cursor: pointer;
     position: relative;
