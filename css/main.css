@@ -2187,14 +2187,25 @@ a.btn_print:hover:before {
 .catalog_table {
 }
 
+.catalog_table > .row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.catalog_table > .row > [class^="col"] {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .catalog_table a.item {
     position: relative;
     display: block;
-    padding: 48px 45px 20px 45px;
+    max-width: 225px;
     color: #000000;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+    padding-bottom: 19px;
     text-decoration: none;
 }
 
@@ -2206,15 +2217,14 @@ a.btn_print:hover:before {
 }
 
 .catalog_table a.item .image {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .catalog_table a.item > .title {
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 600;
     line-height: 140%;
-    letter-spacing: -0.3px;
-    font-size: 18px;
-    letter-spacing: -0.3px;
+    /*letter-spacing: -0.3px;*/
 }
 
 .catalog_table a.item .info { /*transform: scale(0,0);*/
@@ -2226,20 +2236,65 @@ a.btn_print:hover:before {
     bottom: 0;
     background: rgba(0, 103, 154, 0.95);
     color: #ffffff;
-    padding: 30px 15px 55px 15px;
+    padding: 30px 15px 30px 15px;
     transition: 1s;
 }
 
 .catalog_table a.item .info .title {
-    font-weight: 800;
-    padding-bottom: 11px;
-    font-size: 22px;
-    line-height: 140%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 10px;
 }
 
-.catalog_table a.item .info .text {
-    font-size: 12px;
-    line-height: 160%;
+.catalog_table a.item .info .main-text {
+    font-size: 10px;
+    line-height: 120%;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+@media (max-width: 1399px) {
+
+    .catalog_table a.item .info .main-text {
+        margin-bottom: 10px;
+    }
+}
+
+.catalog_table a.item .info .text-block {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1399px) {
+
+    .catalog_table a.item .info .text-block {
+        margin-bottom: 5px;
+    }
+}
+
+.catalog_table a.item .info .text-block:last-child {
+    margin-bottom: 0;
+}
+
+.catalog_table a.item .info .text-block .subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.catalog_table a.item .info .text-block .subtitle:last-child {
+    margin-bottom: 0;
+}
+
+.catalog_table a.item .info .text-block .text {
+    font-size: 10px;
+    line-height: 120%;
+    color: #E5E8EC;
+    opacity: 0.7;
+    text-align: center;
 }
 
 .catalog_table a.item .info .icons {
