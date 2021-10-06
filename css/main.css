@@ -2197,11 +2197,14 @@ a.btn_print:hover:before {
 }
 
 .catalog_table > .row > [class^="col"] {
+    display: flex;
+    flex-direction: column;
     padding-left: 8px;
     padding-right: 8px;
 }
 
 .catalog_table a.item {
+    flex: 1 0 auto;
     position: relative;
     display: block;
     max-width: 225px;
@@ -2378,13 +2381,18 @@ a.btn_print:hover:before {
 }
 
 .category_short .icons {
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
 .category_short .icons img {
     margin-right: 7px;
     max-width: 35px;
     heigth: auto;
+    margin-bottom: 10px;
+}
+
+.category_short .icons img:nth-child(n+16) {
+    display: none;
 }
 
 .category_short .icons_sphera img {
@@ -2403,6 +2411,15 @@ a.btn_print:hover:before {
     padding-left: 22px;
     position: relative;
     padding-top: 2px;
+    float: left;
+    width: 50%;
+}
+
+@media (max-width: 575px) {
+
+    .category_short .docs .item {
+        width: 100%;
+    }
 }
 
 .category_short .docs .item .icon {
@@ -2662,11 +2679,18 @@ a.favorite.active:after {
 .product_info_block table tr td {
     padding: 20px;
     border: none;
+    transition: .3s;
 }
 
 .product_info_block table tr td:nth-of-type(1) {
     border-right: solid 1px #E5E8EC;
     width: 50%;
+}
+
+.product_info_block table tr:hover td {
+    background: #00679A;
+    border-color: #00679A;
+    color: #fff;
 }
 
 .related_products_wrapper {
@@ -2675,33 +2699,11 @@ a.favorite.active:after {
 .related_products_list {
 }
 
-.related_products_list a.item {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 48px 15px 15px 15px;
-    position: relative;
-    margin-bottom: 21px;
-    text-decoration: none;
-}
-
 .related_products_list a.item .labels {
     position: absolute;
     top: 15px;
     left: 15px;
     right: 15px;
-}
-
-.related_products_list a.item .image {
-    padding-bottom: 15px;
-}
-
-.related_products_list a.item .title {
-    font-weight: 800;
-    font-size: 10px;
-    line-height: 140%;
-    text-transform: uppercase;
-    color: #000000;
-    margin-bottom: 10px;
 }
 
 .related_products_list a.item .icons {
@@ -2715,6 +2717,11 @@ a.favorite.active:after {
     text-align: center;
     line-height: 30px;
 }
+
+/*.related_products_list.catalog_table > .row > [class^="col"] {*/
+/*    flex: 0 0 20%;*/
+/*    max-width: 20%;*/
+/*}*/
 
 footer {
     padding: 30px 0;
