@@ -5578,6 +5578,91 @@ footer {
     line-height: 2;
 }
 
+.tech-cap_info {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 162%;
+    color: #000000;
+    letter-spacing: 1.2px;
+    padding-top: 27px;
+    padding-left: 219px;
+    padding-right: 219px;
+}
+
+@media (max-width: 1199px) {
+
+    .tech-cap_info {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .tech-cap_info {
+        padding-top: 0;
+        font-size: 16px;
+    }
+}
+
+.tech-cap-items__col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 29px;
+}
+
+@media (max-width: 767px) {
+
+    .tech-cap-items__col {
+        margin-bottom: 20px;
+    }
+}
+
+.tech-cap-items__card {
+    display: block;
+    text-decoration: none;
+}
+
+.tech-cap-items__img-wrap {
+    position: relative;
+    padding: 52.4% 0 0;
+    background-color: #E5E8EC;
+    margin-bottom: 21px;
+}
+
+@media (max-width: 767px) {
+
+    .tech-cap-items__img-wrap {
+        margin-bottom: 10px;
+    }
+}
+
+.tech-cap-items__img-inner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-cap-items__img {
+    display: block;
+}
+
+.tech-cap-items__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: .2px;
+    color: #000000;
+}
+
 @media only screen and (max-width: 991px) {
     /* до -lg */
     header {
