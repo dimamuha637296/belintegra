@@ -591,13 +591,16 @@ a.btn_print:hover:before {
     margin-bottom: 25px;
 }
 
-.top_info_wrapper {
-    padding: 12px 0;
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1040;
+}
+
+.top_info_wrapper {
+    padding: 12px 0;
     background: #ffffff;
 }
 
@@ -763,10 +766,6 @@ a.btn_print:hover:before {
     top: 6px;
     width: 100%;
     border-bottom: solid 1px #000000;
-}
-
-.top_menu_wrapper {
-    margin-top: 79px;
 }
 
 .top_menu {
