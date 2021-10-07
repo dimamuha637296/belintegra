@@ -5328,6 +5328,31 @@ footer {
     transform: translate(-50%,-50%);
 }
 
+.page_info {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 162%;
+    color: #000;
+    padding-left: 219px;
+    padding-right: 219px;
+}
+
+@media (max-width: 1399px) {
+
+    .page_info {
+        padding-left: 129px;
+        padding-right: 129px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .page_info {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
 .news {
 
 }
@@ -5435,21 +5460,11 @@ footer {
 .news_item_info {
     font-size: 18px;
     line-height: 162%;
-    color: #333333;
+    color: #000;
     text-align: justify;
     letter-spacing: 1.4px;
     padding-top: 28px;
     padding-bottom: 62px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 991px) {
-
-    .news_item_info {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .news_item_info p {
@@ -5464,23 +5479,10 @@ footer {
 }
 
 .vacancies_info {
-    font-size: 18px;
-    line-height: 162%;
-    color: #333333;
     text-align: justify;
     letter-spacing: 1.4px;
     padding-top: 28px;
     padding-bottom: 62px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 1199px) {
-
-    .vacancies_info {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -5603,20 +5605,7 @@ footer {
 .vacancy_info {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-size: 18px;
-    line-height: 162%;
-    color: #000000;
     letter-spacing: 1.2px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 1199px) {
-
-    .vacancy_info {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -5667,21 +5656,7 @@ footer {
 
 .test-program_info {
     font-family: 'Gilroy', sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 162%;
-    color: #000000;
     letter-spacing: 1.2px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 1199px) {
-
-    .test-program_info {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -5718,22 +5693,8 @@ footer {
 
 .tech-cap_info {
     font-family: 'Gilroy', sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 162%;
-    color: #000000;
     letter-spacing: 1.2px;
     padding-top: 27px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 1199px) {
-
-    .tech-cap_info {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -5803,30 +5764,8 @@ footer {
 
 .device_info {
     font-family: 'Gilroy', sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 162%;
-    color: #000000;
     letter-spacing: 1.2px;
     padding-top: 20px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 1399px) {
-
-    .device_info {
-        padding-left: 129px;
-        padding-right: 129px;
-    }
-}
-
-@media (max-width: 1199px) {
-
-    .device_info {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -5936,22 +5875,8 @@ footer {
 
 .search_info {
     font-family: 'Gilroy', sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 162%;
-    color: #000000;
     letter-spacing: 1.2px;
     padding-top: 20px;
-    padding-left: 219px;
-    padding-right: 219px;
-}
-
-@media (max-width: 1199px) {
-
-    .search_info {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 @media (max-width: 767px) {
