@@ -602,6 +602,18 @@ a.btn_print:hover:before {
 .top_info_wrapper {
     padding: 12px 0;
     background: #ffffff;
+    transition: .3s;
+}
+
+.header--scroll .top_info_wrapper {
+    padding: 0;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 991px) {
+    /*.header--scroll .top_info_wrapper {*/
+    /*    filter: none;*/
+    /*}*/
 }
 
 .top_logo {
@@ -2810,7 +2822,7 @@ footer {
 .footer_info {
     font-size: 12px;
     line-height: 1.2rem;
-    padding-top: 30px;
+    padding-top: 14px;
 }
 
 .mob_catalog_categories_menu {
@@ -6064,6 +6076,77 @@ footer {
     font-size: 14px;
     line-height: 160%;
     color: #000000;
+}
+
+.top_hamburger {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 27px;
+}
+
+.top_hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top_hamburger span,
+.top_hamburger span:before,
+.top_hamburger span:after {
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    transition: .3s;
+}
+
+.top_hamburger span:before {
+    content: '';
+    top: 10px;
+}
+
+.top_hamburger span:after {
+    content: '';
+    bottom: 10px;
+}
+
+.top_hamburger.active span {
+    background: transparent;
+}
+
+.top_hamburger.active span:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.top_hamburger.active span:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.header .top_menu_wrapper {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .header .top_menu_wrapper {
+        display: none !important;
+    }
+}
+
+.header .top_hamburger_wrap {
+    display: none;
+    padding-left: 20px;
+}
+
+.header.header--scroll .top_hamburger_wrap {
+    display: block;
+}
+
+.header.header--scroll .top_menu_wrapper {
+    display: none;
 }
 
 @media only screen and (max-width: 991px) {
