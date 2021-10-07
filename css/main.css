@@ -798,10 +798,12 @@ a.btn_print:hover:before {
     position: absolute;
     top: 49px;
     left: 15px;
-    z-index: 1000;
+    max-height: 286px;
+    overflow-y: auto;
+    /*z-index: 1000;*/
     background: #ffffff;
     list-style: none;
-    padding: 19px 40px 15px;
+    padding: 20px 40px 18px;
     margin: 0;
     opacity: 0;
     transition: .3s;
@@ -815,7 +817,7 @@ a.btn_print:hover:before {
 }
 
 .top_menu ul.top_main_menu > li > ul.submenu > li {
-    padding: 22px 0 22px;
+    padding: 16px 0 16px;
 }
 
 .top_menu ul.top_main_menu > li > ul.submenu a {
@@ -1211,7 +1213,7 @@ a.btn_print:hover:before {
 }
 
 .mp_catalog_menu_wrapper {
-    background: #fdfdfd;
+    background: #fff;
     padding-bottom: 52px;
 }
 
