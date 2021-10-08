@@ -2244,7 +2244,6 @@ a.btn_print:hover:before {
     font-size: 12px;
     font-weight: 600;
     line-height: 140%;
-    /*letter-spacing: -0.3px;*/
 }
 
 .catalog_table a.item .info { /*transform: scale(0,0);*/
@@ -5601,8 +5600,6 @@ footer {
 }
 
 .vacancy_info {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     letter-spacing: 1.2px;
 }
 
@@ -5653,7 +5650,6 @@ footer {
 }
 
 .test-program_info {
-    font-family: 'Gilroy', sans-serif;
     letter-spacing: 1.2px;
 }
 
@@ -5690,7 +5686,6 @@ footer {
 }
 
 .tech-cap_info {
-    font-family: 'Gilroy', sans-serif;
     letter-spacing: 1.2px;
     padding-top: 27px;
     text-align: justify;
@@ -5762,7 +5757,6 @@ footer {
 }
 
 .device_info {
-    font-family: 'Gilroy', sans-serif;
     letter-spacing: 1.2px;
     padding-top: 20px;
     text-align: justify;
