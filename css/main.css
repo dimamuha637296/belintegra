@@ -5873,7 +5873,6 @@ footer {
 }
 
 .search_info {
-    font-family: 'Gilroy', sans-serif;
     letter-spacing: 1.2px;
     padding-top: 20px;
 }
@@ -6040,7 +6039,7 @@ footer {
     font-weight: bold;
     font-size: 20px;
     line-height: 120%;
-    letter-spacing: -1.4px;
+    letter-spacing: .3px;
     text-transform: uppercase;
     color: #00679A;
     margin-bottom: 10px;
@@ -6057,6 +6056,8 @@ footer {
     display: block;
     font-size: 12px;
     line-height: 160%;
+    text-decoration: none;
+    letter-spacing: 0.8px;
     color: #777777;
     margin-bottom: 20px;
 }
