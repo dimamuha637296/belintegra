@@ -5693,6 +5693,7 @@ footer {
     font-family: 'Gilroy', sans-serif;
     letter-spacing: 1.2px;
     padding-top: 27px;
+    text-align: justify;
 }
 
 @media (max-width: 767px) {
