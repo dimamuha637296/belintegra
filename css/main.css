@@ -809,12 +809,10 @@ a.btn_print:hover:before {
     position: absolute;
     top: 49px;
     left: 15px;
-    max-height: 286px;
-    overflow-y: auto;
     /*z-index: 1000;*/
     background: #ffffff;
     list-style: none;
-    padding: 20px 40px 18px;
+    padding: 18px 40px 20px;
     margin: 0;
     opacity: 0;
     visibility: hidden;
@@ -830,7 +828,7 @@ a.btn_print:hover:before {
 }
 
 .top_menu ul.top_main_menu > li > ul.submenu > li {
-    padding: 16px 0 16px;
+    padding: 9px 0;
 }
 
 .top_menu ul.top_main_menu > li > ul.submenu a {
@@ -5766,6 +5764,7 @@ footer {
     font-family: 'Gilroy', sans-serif;
     letter-spacing: 1.2px;
     padding-top: 20px;
+    text-align: justify;
 }
 
 @media (max-width: 767px) {
@@ -6073,6 +6072,10 @@ footer {
     font-size: 14px;
     line-height: 160%;
     color: #000000;
+}
+
+.vru_info {
+    text-align: justify;
 }
 
 .top_hamburger {
