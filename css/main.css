@@ -2791,6 +2791,10 @@ footer {
     margin-left: 28px;
 }
 
+.footer_networks a:first-child {
+    margin-left: 0;
+}
+
 .footer_menu {
     line-height: 1.6rem;
     padding-bottom: 15px;
@@ -2814,8 +2818,22 @@ footer {
     padding-bottom: 15px;
 }
 
+@media (max-width: 991px) {
+
+    .footer_menu ul {
+        padding-bottom: 0;
+    }
+}
+
 .footer_menu ul li {
     padding-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+
+    .footer_menu ul li {
+        padding-bottom: 15px;
+    }
 }
 
 .footer_info {
@@ -6529,7 +6547,7 @@ footer {
 
     .footer_subscribe_text {
         font-size: 12px;
-        line-height: 1.2rem;
+        line-height: 1.4;
         background-image: url(../svg/icon_subscribe_small_white.svg);
         margin-bottom: 20px;
         padding-left: 42px;
@@ -6570,10 +6588,6 @@ footer {
     }
 
     .footer_networks {
-    }
-
-    .footer_networks a {
-        margin: 0;
     }
 
     .lk_form_reg {
