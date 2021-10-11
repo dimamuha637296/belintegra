@@ -4094,6 +4094,14 @@ footer {
     padding-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+    
+    .lk_info_wrapper h1,
+    .lk_info_wrapper .h1 {
+        font-size: 20px;
+    }
+}
+
 .aside_menu_lk {
     letter-spacing: -1px;
 }
@@ -4126,6 +4134,13 @@ footer {
     margin-bottom: 40px;
 }
 
+@media (max-width: 991px) {
+
+    .lk_rules_menu_wrapper {
+        margin-bottom: 0;
+    }
+}
+
 .lk_rules_menu_wrapper a {
     display: block;
     background: #00679A;
@@ -4135,7 +4150,7 @@ footer {
     line-height: 120%;
     text-align: center;
     text-decoration: none;
-    padding: 100px 20px 20px 20px;
+    padding: 100px 20px 26px 20px;
     margin-bottom: 10px;
     background-position: 50% 20px;
     background-repeat: no-repeat;
