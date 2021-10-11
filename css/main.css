@@ -2827,7 +2827,7 @@ footer {
 @media (max-width: 991px) {
 
     .footer_networks {
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
