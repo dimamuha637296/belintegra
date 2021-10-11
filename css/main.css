@@ -114,6 +114,16 @@ h5, .h5 {
     text-transform: uppercase;
 }
 
+ol.reset-counter {
+    list-style-type: none;
+    counter-reset: count;
+}
+
+ol.reset-counter > li:before {
+    counter-increment: count;
+    content: counters(count,".") ". ";
+}
+
 /*.bigger_title h1, .bigger_title .h1 {*/
 /*    font-size: 34px;*/
 /*    line-height: 130%;*/
@@ -131,6 +141,14 @@ h5, .h5 {
 /*    font-weight: 800;*/
 /*    text-transform: none;*/
 /*}*/
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
 
 .fade {
     transition: opacity .15s linear;
