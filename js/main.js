@@ -155,45 +155,33 @@ $(document).ready(function(){
 			/*nav:true*/
 		});
 	}
-	
-	if ($(".owl-carousel-mp2-slider").length > 0) {
-		$(".owl-carousel-mp2-slider").owlCarousel({
-			/*items:9,*/
-			autoplay: true,
-      		autoplayTimeout: 3000,
-			responsive:{
-				0:{
-					items:1,
-					stagePadding:40,
-				},
-				1280:{
-					items:6,
-					stagePadding:40,
-				}
-			},
-			onInitialized: function(event) {
-				setTimeout(function() {
-					var w = $(".owl-carousel-mp2-slider .owl-item:eq(0)").width();
-					$(".owl-carousel-mp2-slider .owl-item").css({'width':w + 'px'}).addClass('semiactive');
-					$(".owl-carousel-mp2-slider .owl-item:eq(" + (event.item.index + 4) + ")").css({'width':(w * 2.5) + 'px'}).removeClass('semiactive');
-					var title = $(".owl-carousel-mp2-slider .owl-item:eq(" + (event.item.index + 4) + ")").find('.title').html();
-					$("#mp2-slider_title").html(title);
-					setTimeout(function() {
-						$(".owl-carousel-mp2-slider .owl-stage").css({'height': $(".owl-carousel-mp2-slider .owl-stage").height() + 'px'});
-					}, 1000);
-				}, 200);
-			},
-			onChanged: function(event){
-				var w = $(".owl-carousel-mp2-slider .owl-item:eq(" + event.item.index + ")").width();
-				$(".owl-carousel-mp2-slider .owl-item").css({'width':w + 'px'}).addClass('semiactive');
-				$(".owl-carousel-mp2-slider .owl-item:eq(" + (event.item.index + 4) + ")").css({'width':(w * 2.5) + 'px'}).removeClass('semiactive');
-				var title = $(".owl-carousel-mp2-slider .owl-item:eq(" + (event.item.index + 4) + ")").find('.title').html();
-				$("#mp2-slider_title").html(title);
-			},
-			loop:true,
 
-		});
-	}
+    if ($(".owl-mp2-slider").length > 0) {
+        $(".owl-mp2-slider").owlCarousel({
+            /*items:9,*/
+            responsive:{
+                0:{
+                    items:1,
+                },
+                576: {
+                    items:1,
+                    stagePadding:0,
+                },
+                768:{
+                    items:1,
+                    stagePadding:80,
+                    dots: false
+                },
+                992:{
+                    items:1,
+                    stagePadding:100,
+                    dots: false
+                }
+            },
+            loop:true,
+            /*nav:true*/
+        });
+    }
 	
 	$(document).on("mouseenter", ".top_main_menu a", function(){
 		if($(this).hasClass("active")) return;
@@ -437,73 +425,6 @@ $(document).ready(function(){
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
-
-	!function () {
-		'use strict';
-
-		function setSimilarSlidesHeight(slider) {
-			'use strict';
-			var slides = slider.find('.slide');
-			if (slides.length > 0) {
-				var maxHeight = 0;
-				slides.each(function () {
-					var slide = $(this);
-					slide.css('height', '');
-					var slideHeight = slide.outerHeight();
-					if (maxHeight < slideHeight) {
-						maxHeight = slideHeight;
-					}
-				});
-				slides.css('height', maxHeight);
-			}
-		}
-
-		function setSlidesHeight(slider) {
-			if (typeof setSimilarSlidesHeight === 'function') {
-				setSimilarSlidesHeight(slider);
-			}
-		}
-
-		//https://github.com/kenwheeler/slick/
-		function initSlider() {
-			var block = $('.sl-products');
-			if (!block.length || !$.fn.slick) {
-				return false;
-			}
-			block.each(function () {
-				var self = $(this);
-				var slider = self.find('.slider');
-				var slidesLength = slider.find('.slide').length;
-				var pager = self.find('.js-sl-pager');
-				var sliderWrap = self.find('.wrap');
-				var prev = self.find('.prev');
-				var next = self.find('.next');
-				sliderWrap.removeClass('inited-not');
-				slider.on('setPosition', function () {
-					setSlidesHeight(slider);
-				});
-				slider.slick({
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					adaptiveHeight: false, // true - height: auto
-					autoplay: false,
-					autoplaySpeed: 7000,
-					speed: 500,
-					arrows: slidesLength > 1,
-					dots: slidesLength > 1,
-					appendDots: pager,
-					dotsClass: 'list-reset', // pager class
-					nextArrow: next,
-					prevArrow: prev
-				});
-				sliderWrap.addClass('inited');
-			});
-		}
-
-		$(function () {
-			initSlider();
-		});
-	}();
 
 	!function () {
 		'use strict';

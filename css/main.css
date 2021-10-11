@@ -3647,6 +3647,138 @@ footer {
     height: 550px;
 }
 
+.owl-mp2-slider {
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .owl-mp2-slider {
+        margin-bottom: 70px;
+    }
+}
+
+.owl-mp2-slider .item {
+    padding: 0 10px;
+}
+
+.owl-mp2-slider_outer {
+    position: relative;
+}
+
+.owl-mp2-slider .item {
+    padding: 0 10px;
+}
+
+.owl-mp2-slider_outer {
+    position: relative;
+}
+
+.owl-mp2-slider_outer .slider-nav {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #909090;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .owl-mp2-slider_outer .slider-nav {
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .owl-mp2-slider_outer .slider-nav {
+        display: none;
+    }
+}
+
+.owl-mp2-slider_outer .slider-nav.right_arrow {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    left: auto;
+    width: 60px;
+    height: 60px;
+    border: solid 1px #909090;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .owl-mp2-slider_outer .slider-nav.right_arrow {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .owl-mp2-slider_outer .slider-nav.right_arrow {
+        display: none;
+    }
+}
+
+.owl-mp2-slider_outer .slider-nav > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.owl-mp2-slider_outer .slider-nav > div.active {
+    z-index: 20;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.owl-mp2-slider_outer .slider-nav:hover > div {
+    opacity: 0;
+}
+
+.owl-mp2-slider_outer .slider-nav:hover > div.active {
+    opacity: 1;
+}
+
+.owl-carousel.owl-mp2-slider.blue-dots .owl-dots {
+    bottom: -35px;
+}
+
+.owl-mp2-slider .item {
+    position: relative;
+}
+
+.owl-mp2-slider .descr {
+    position: absolute;
+    left: 31px;
+    bottom: 29px;
+    color: #fff;
+}
+
+.owl-mp2-slider .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.owl-mp2-slider .text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
 .cases_list_wrapper {
 }
 
