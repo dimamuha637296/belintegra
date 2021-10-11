@@ -256,7 +256,7 @@
                         </div>
                     </div>
                     <div class="vru_info page_info">
-                        <div class="row js-popup-gallery-arrow">
+                        <div class="row js-popup-gallery">
                             <div class="col-lg-6 col-12 text-center">
                                 <a href="imgs/vru-02.jpg" class="link" title="Фото">
                                     <img src="imgs/vru-02.jpg" alt="vru-02.jpg" class="img-fluid mb-5">
@@ -503,41 +503,53 @@
     !function () {
         'use strict';
 
-        // popup with arrows
-        function popupGalleryArrow() {
-            var galleryList = $('.js-popup-gallery-arrow');
-            if (galleryList.length && $.fn.magnificPopup) {
-                galleryList.each(function () {
-                    $(this).magnificPopup({
-                        delegate: '.link',
-                        type: 'image',
-                        closeOnContentClick: false,
-                        closeBtnInside: false,
-                        mainClass: 'mfp-with-zoom mfp-img-mobile',
-                        image: {
-                            verticalFit: true,
-                            titleSrc: function (item) {
-                                return item.el.attr('title');
-                            }
-                        },
-                        gallery: {
-                            enabled: true
-                        },
-                        zoom: {
-                            enabled: true,
-                            duration: 300, // don't foget to change the duration also in CSS
-                            opener: function (element) {
-                                return element.find('img');
-                            }
-                        }
-                    });
-                });
+        // init popup-gallery no arrow
+        function popupGallery() {
+            var galleryList = $('.js-popup-gallery');
+            if (!galleryList.length || !$.fn.magnificPopup) {
+                return false;
             }
+            galleryList.find('.link').each(function () {
+                var self = $(this);
+                var data = self.data('gallery');
+                var src = [{
+                    src: self.attr('href'),
+                    title: self.attr('title')
+                }];
+                if ((typeof data) !== 'undefined') {
+                    for (var i = 0; i < data.length; i++) {
+                        src.push({
+                            src: data[i].href,
+                            title: data[i].title
+                        });
+                    }
+                }
+                self.magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    image: {
+                        verticalFit: true
+                    },
+                    gallery: {
+                        enabled: true //false
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300, // don't forget to change the duration also in CSS
+                        opener: function () {
+                            return self;
+                        }
+                    },
+                    items: src
+                });
+            });
         }
 
         // Call functions
         $(window).on('load', function () {
-            popupGalleryArrow()
+            popupGallery();
         });
     }();
 </script>
