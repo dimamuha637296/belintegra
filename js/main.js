@@ -384,7 +384,9 @@ $(document).ready(function(){
 	
 	
 	if($(".datepicker").length > 0) {
-		$( ".datepicker" ).datepicker();
+		$( ".datepicker" ).datepicker({
+            dateFormat: 'dd.mm.yy'
+        });
 	}
 	$("select.styler").styler();
 
