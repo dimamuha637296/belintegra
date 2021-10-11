@@ -582,14 +582,17 @@ a.btn_print:hover:before {
     color: #ffffff;
 }
 
-.tab_menu.tabs_scroll {
-    display: flex;
-    overflow-x: auto;
-}
+@media (max-width: 1199px) {
 
-.tab_menu.tabs_scroll::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    .tab_menu.tabs_scroll {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .tab_menu.tabs_scroll::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 }
 
 .tab_wrapper {
