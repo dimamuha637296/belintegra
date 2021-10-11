@@ -4084,7 +4084,8 @@ footer {
     line-height: 160%;
 }
 
-.lk_info_wrapper h1 {
+.lk_info_wrapper h1,
+.lk_info_wrapper .h1 {
     font-weight: 800;
     font-size: 30px;
     line-height: 120%;
