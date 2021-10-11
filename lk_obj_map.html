@@ -261,6 +261,7 @@
                                 <div class="lk_obj_map_wrapper">
                                     <div id="ymap"></div>
                                     <div class="lk_obj_map_info_wrapper">
+                                        <div class="lk_obj_map_info_close"></div>
                                         <div class="lk_obj_map_info_inner info_inner11">
                                             <div class="h2 font2">ИНФОРМАЦИЯ ОБ ОБЪЕКТЕ1</div>
                                             <div class="title">Дилер:</div>
@@ -540,6 +541,10 @@
                 $(".lk_obj_map_wrapper .lk_obj_map_info_wrapper .info_inner" + mid).addClass("active");
             }
         }
+
+        $(document).on("click", ".lk_obj_map_info_close", function(e){
+            $(this).parent('.lk_obj_map_wrapper .lk_obj_map_info_wrapper').removeClass("active");
+        });
     }
 
     ymaps.ready(function () {
