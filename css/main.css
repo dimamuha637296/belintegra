@@ -4131,10 +4131,46 @@ footer {
     padding-bottom: 20px;
 }
 
+.page_404 {
+
+}
+
+.page_404 .outer-bg {
+
+}
+
+@media (max-width: 991px) {
+
+    .page_404 .outer-bg {
+        background: #00679A;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .page_404 header,
+    .page_404 footer {
+        display: none;
+    }
+}
+
 .ups_404 {
     font-weight: 300;
     font-size: 30px;
     line-height: 120%;
+}
+
+@media (max-width: 991px) {
+
+    .ups_404 {
+        font-size: 20px;
+        letter-spacing: 0.004em;
+        color: #FFFFFF;
+    }
 }
 
 .text_404 {
@@ -4142,18 +4178,48 @@ footer {
     font-size: 300px;
     line-height: 120%;
     color: #00679A;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     letter-spacing: 0.004em;
+}
+
+@media (max-width: 991px) {
+
+    .text_404 {
+        margin-bottom: 20px;
+        font-size: 150px;
+        color: #fff;
+    }
 }
 
 .btn_404 {
     padding-bottom: 10px;
 }
 
+@media (max-width: 991px) {
+
+    .btn_404 {
+
+    }
+}
+
 .btn_404 a.btn_blue {
     width: 100%;
     max-width: 350px;
     font-weight: 700;
+}
+
+@media (max-width: 991px) {
+
+    .btn_404 a.btn_blue {
+        padding: 13px 20px;
+        background: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+        color: #000000;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .lk_forms_wrapper {
@@ -7006,46 +7072,6 @@ footer {
     .case_item_simple_text {
         padding-bottom: 30px;
         font-size: 16px;
-    }
-
-    .page_404 {
-        background: #00679A;
-        color: #ffffff;
-    }
-
-    .page_404 header {
-        display: none;
-    }
-
-    .page_404 footer {
-        display: none;
-    }
-
-    .page_404 .wrapper_404 {
-        padding-top: 140px;
-    }
-
-    .page_404 .ups_404 {
-        color: #ffffff;
-        font-size: 20px;
-        line-height: 120%;
-    }
-
-    .page_404 .text_404 {
-        color: #ffffff;
-        font-size: 150px;
-        line-height: 120%;
-        padding-top: 20px;
-    }
-
-    .page_404 .btn_404 {
-    }
-
-    .page_404 .btn_404 .btn_blue {
-        background: #ffffff;
-        color: #000000;
-        max-width: none;
-        font-size: 14px;
     }
 
     .footer_subscribe_text {
