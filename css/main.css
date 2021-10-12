@@ -2196,6 +2196,10 @@ a.btn_print:hover:before {
     font-size: 0;
 }
 
+.catalog_switcher a:first-child {
+    margin-left: 0;
+}
+
 .catalog_switcher .catalog_switcher_list {
     background: url(../svg/icon_switcher_list.svg) 50% 50% no-repeat;
 }
@@ -2225,6 +2229,10 @@ a.btn_print:hover:before {
     display: inline-block;
     padding: 2px 7px;
     margin-right: 2px;
+}
+
+.labels span:last-child {
+    margin-right: 0;
 }
 
 .labels span.label_new {
@@ -2385,17 +2393,49 @@ a.btn_print:hover:before {
 .catalog_list {
 }
 
-.catalog_list {
-}
-
 .catalog_list a.item {
     display: block;
+    position: relative;
+    padding-right: 130px;
     color: #000000;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
-    padding: 15px;
     text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    .catalog_list a.item {
+        padding-right: 0;
+    }
+}
+
+.catalog_list .item_inner {
+    display: flex;
+}
+
+.catalog_list .image {
+    flex: 0 0 180px;
+    max-width: 180px;
+}
+
+.catalog_list .text_info {
+    padding: 19px 70px 18px 20px;
+}
+
+@media (max-width: 1399px) {
+
+    .catalog_list .text_info {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .catalog_list .text_info {
+        padding: 47px 10px 45px;
+    }
 }
 
 .catalog_list .icons {
@@ -2407,18 +2447,62 @@ a.btn_print:hover:before {
 }
 
 .catalog_list .labels {
+    position: absolute;
+    top: 11px;
+    right: 12px;
     margin-bottom: 12px;
+    max-width: 120px;
+}
+
+@media (max-width: 767px) {
+
+    .catalog_list .labels {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+    }
+}
+
+.catalog_list .icons {
+    position: absolute;
+    top: 39px;
+    right: 12px;
+    max-width: 120px;
+}
+
+@media (max-width: 767px) {
+
+    .catalog_list .icons {
+        top: auto;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+    }
 }
 
 .catalog_list a.item .title {
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: bold;
     line-height: 140%;
-    letter-spacing: -0.3px;
+    letter-spacing: .6px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .catalog_list a.item .title {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
 }
 
 .catalog_list a.item .text {
     font-size: 12px;
+    line-height: 1.62;
 }
 
 .catalog_category_wrapper {
@@ -6660,10 +6744,6 @@ footer {
 
     .catalog_table a.item > .title {
         font-size: 14px;
-    }
-
-    .catalog_list a.item .text {
-        padding-bottom: 20px;
     }
 
     .mp_banners_wrapper {
