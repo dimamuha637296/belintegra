@@ -534,4 +534,11 @@ $(document).ready(function(){
 			$(".tablesorter1").tablesorter();
 		}
     });
+
+	if ($(".jsCustomScrollbar").length && $.fn.mCustomScrollbar) {
+		$(".jsCustomScrollbar.jsCustomScrollbar-x").mCustomScrollbar({
+			axis:"x",
+			theme:"dark"
+		});
+	}
 })

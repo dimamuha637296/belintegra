@@ -4538,23 +4538,26 @@ footer {
 }
 
 .lk_obj_list {
+
+}
+
+.lk_obj_list table {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 0px;
+    /*margin-left: 1px;*/
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
 
-.lk_obj_list table {
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 0px;
-    width: 99.9%;
-}
-
 .lk_obj_list table td {
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .lk_obj_list table thead td {
-    padding: 8px 20px;
+    padding: 8px 10px 12px;
 }
 
 .lk_obj_list table tbody tr.even {
@@ -6531,6 +6534,39 @@ footer {
 
 .header.header--scroll .top_menu_wrapper {
     display: none;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    height: 10px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #00679A;
+    border-radius: 10px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    background: #00679A;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    margin: 0;
+    height: 10px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: #00679A;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    height: 0;
+    margin: 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    border-radius: 10px;
+    background: #EEF2F4;
 }
 
 @media only screen and (max-width: 991px) {
