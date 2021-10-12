@@ -126,8 +126,10 @@ var steps = {
 	},
 	bindMap: function() {
 		var self = this;
-		$(document).on("change", "input[name='obj_address']", function(){
-			if($(this).val() != '') {
+		$(document).on("click", ".steps_search_btn", function(e){
+			var inp = $(this).closest('.form_field').find("input[name='obj_address']");
+
+			if(inp.val() != '') {
 				$("#reg_step_map").show();
 				$("#reg_step_map #ymap").html('');
 				initMap('53.914929,27.570913');
@@ -135,7 +137,7 @@ var steps = {
 				$("#reg_step_map #ymap").html('');
 				$("#reg_step_map").hide();
 			}
-		})
+		});
 	},
 	postProcess: function() {
 		alert('это последний был шаг. дальше отправка данных');

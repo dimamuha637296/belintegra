@@ -529,6 +529,8 @@ $(document).ready(function(){
 	}();
 
     $(function() {
-        $(".tablesorter1").tablesorter();
+		if($(".tablesorter1").length > 0) {
+			$(".tablesorter1").tablesorter();
+		}
     });
 })
