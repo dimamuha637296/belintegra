@@ -3485,6 +3485,13 @@ footer {
     padding-bottom: 10px;
 }
 
+@media (min-width: 1200px) {
+
+    .company_contacts_wrapper .col--contacts {
+        padding-left: 30px;
+    }
+}
+
 .company_contacts_wrapper .contacts_text {
     font-size: 16px;
     line-height: 160%;
@@ -3492,8 +3499,8 @@ footer {
 }
 
 .company_contacts_wrapper .contacts_text ul {
-    padding-bottom: 14px;
-    padding-top: 24px;
+    padding-top: 22px;
+    padding-bottom: 36px;
 }
 
 .company_clients_wrapper {
@@ -4504,6 +4511,7 @@ footer {
 .reg_step_map #ymap {
     width: 100%;
     height: 350px;
+    max-width: 100%;
 }
 
 .reg_step_map_capture {
@@ -4521,6 +4529,7 @@ footer {
     font-size: 12px;
     line-height: 140%;
     padding: 7px 20px;
+    border: none;
     z-index: 1000;
 }
 
@@ -6733,7 +6742,7 @@ footer {
     }
 
     .contacts_text {
-        padding-bottom: 20px;
+        padding-bottom: 0;
         padding-left: 0;
         font-size: 14px;
         line-height: 140%;
