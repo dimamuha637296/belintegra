@@ -290,10 +290,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		if($(this).hasClass("active")) {
 			$(this).removeClass("active");
-			$(".model_list table").addClass("unactive");
+			$(this).closest(".model_list").find("table").addClass("unactive");
 		} else {
 			$(this).addClass("active");
-			$(".model_list table").removeClass("unactive");
+			$(this).closest(".model_list").find("table").removeClass("unactive");
 		}
 	})
 	
@@ -350,13 +350,23 @@ $(document).ready(function(){
 	
 	$(document).on("click", ".top_phone .top_phone_icon", function(e){
 		e.preventDefault();
-		$(this).parents(".top_phone").toggleClass("active");
-		if($(this).parents(".top_phone").hasClass("active")) {
+		$(this).closest(".top_phone").toggleClass("active");
+		if($(this).closest(".top_phone").hasClass("active")) {
 			$(".top_phones_wrapper").stop().fadeIn(300);
 		} else {
 			$(".top_phones_wrapper").stop().fadeOut(300);
 		}
 	})
+
+    $(document).on("click", ".model_list table thead td .icon", function(e){
+        e.preventDefault();
+        $(this).closest("td").toggleClass("active");
+        if($(this).closest("td").hasClass("active")) {
+            $(this).closest("td").find(".filter-wrap").stop().fadeIn(300);
+        } else {
+            $(this).closest("td").find(".filter-wrap").stop().fadeOut(300);
+        }
+    })
 	
 	$(document).on("click", ".chat_block .chat_button_close", function(e){
 		e.preventDefault();
@@ -518,5 +528,7 @@ $(document).ready(function(){
 		});
 	}();
 
-
+    $(function() {
+        $(".tablesorter1").tablesorter();
+    });
 })
