@@ -4494,6 +4494,13 @@ footer {
     height: 350px;
 }
 
+.reg_step_map_capture {
+    display: block;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .tochka_info {
     position: absolute;
     top: 20px;
