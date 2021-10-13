@@ -182,6 +182,26 @@ $(document).ready(function(){
 			autoplayTimeout:2000
         });
     }
+
+    if ($(".owl-carousel-device-slider").length > 0) {
+        $(".owl-carousel-device-slider").owlCarousel({
+            responsive:{
+                0:{
+                    stagePadding:25,
+                },
+                575:{
+                    stagePadding: 35,
+                },
+                1280:{
+                    stagePadding: 35,
+                }
+            },
+            items: 1,
+            dots: true,
+            loop: true,
+            margin: 10,
+        });
+    }
 	
 	$(document).on("mouseenter", ".top_main_menu a", function(){
 		if($(this).hasClass("active")) return;

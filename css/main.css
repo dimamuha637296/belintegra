@@ -6750,6 +6750,33 @@ footer {
     background: #EEF2F4;
 }
 
+.owl-carousel-device-slider {
+    margin-bottom: 68px;
+}
+
+.owl-carousel-device-slider .owl-item {
+
+}
+
+.owl-carousel-device-slider .owl-stage {
+    margin-left: -35px;
+}
+
+@media (max-width: 575px) {
+
+    .owl-carousel-device-slider .owl-stage {
+        margin-left: -25px;
+    }
+}
+
+.owl-carousel-device-slider img {
+    margin-bottom: 0;
+}
+
+.owl-carousel-device-slider.blue-dots .owl-dots {
+    bottom: -36px;
+}
+
 @media only screen and (max-width: 991px) {
     /* до -lg */
     header {
