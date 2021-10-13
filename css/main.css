@@ -2657,6 +2657,11 @@ a.btn_print:hover:before {
     padding: 15px 20px;
 }
 
+.model_list table thead td .tablesorter-header-inner {
+    display: flex;
+    align-items: flex-end;
+}
+
 .model_list table thead td span:not(.icon):not(:last-child) {
     margin-right: 8px;
 }
@@ -2681,7 +2686,7 @@ a.btn_print:hover:before {
     display: none;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: calc(100% - 6px);
     padding: 15px;
     color: #000;
     background: #FFFFFF;
@@ -2689,6 +2694,7 @@ a.btn_print:hover:before {
 }
 
 .model_list table thead td .filter-wrap .inp_txt {
+    min-width: 160px;
     margin-bottom: 0;
 }
 
