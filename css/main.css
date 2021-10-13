@@ -4716,15 +4716,20 @@ footer {
 
 }
 
+.table_scroll_wrapper {
+    padding-left: 1px;
+    padding-right: 1px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
 .lk_obj_list table {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.25;
-    margin-bottom: 0px;
-    /*margin-left: 1px;*/
+    margin-bottom: 0;
     width: 100%;
     background: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .lk_obj_list table td {
@@ -4732,7 +4737,7 @@ footer {
 }
 
 .lk_obj_list table thead td {
-    padding: 8px 10px 12px;
+    padding: 10px 10px 10px;
 }
 
 .lk_obj_list table tbody tr.even {
@@ -4742,9 +4747,6 @@ footer {
 .lk_obj_list table tbody td {
     color: #000000;
     border: solid 1px #E5E8EC;
-}
-
-.lk_obj_list table tbody td.brdr { /*border:solid 1px ##E5E8EC;*/
 }
 
 .lk_obj_list_filter {
@@ -6715,38 +6717,38 @@ footer {
     display: none;
 }
 
-/*.mCSB_scrollTools.mCSB_scrollTools_horizontal {*/
-/*    height: 10px;*/
-/*}*/
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    height: 10px;
+}
 
-/*.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {*/
-/*    background: #00679A;*/
-/*    border-radius: 10px;*/
-/*}*/
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #00679A;
+    border-radius: 10px;
+}
 
-/*.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,*/
-/*.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {*/
-/*    background: #00679A;*/
-/*}*/
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    background: #00679A;
+}
 
-/*.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {*/
-/*    margin: 0;*/
-/*    height: 10px;*/
-/*}*/
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    margin: 0;
+    height: 10px;
+}
 
-/*.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {*/
-/*    background: #00679A;*/
-/*}*/
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: #00679A;
+}
 
-/*.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {*/
-/*    height: 0;*/
-/*    margin: 0;*/
-/*}*/
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    height: 0;
+    margin: 0;
+}
 
-/*.mCSB_scrollTools .mCSB_draggerContainer {*/
-/*    border-radius: 10px;*/
-/*    background: #EEF2F4;*/
-/*}*/
+.mCSB_scrollTools .mCSB_draggerContainer {
+    border-radius: 10px;
+    background: #EEF2F4;
+}
 
 @media only screen and (max-width: 991px) {
     /* до -lg */

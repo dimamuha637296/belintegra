@@ -537,10 +537,10 @@ $(document).ready(function(){
 		}
     });
 
-	// if ($(".jsCustomScrollbar").length && $.fn.mCustomScrollbar) {
-	// 	$(".jsCustomScrollbar.jsCustomScrollbar-x").mCustomScrollbar({
-	// 		axis:"x",
-	// 		theme:"dark"
-	// 	});
-	// }
+	if ($(".jsCustomScrollbar").length && $.fn.mCustomScrollbar) {
+		$(".jsCustomScrollbar.jsCustomScrollbar-x").mCustomScrollbar({
+			axis:"x",
+			theme:"dark"
+		});
+	}
 })
