@@ -7443,6 +7443,26 @@ footer {
         display: block !important;
     }
 
+    .print_top {
+        margin-bottom: 10px;
+    }
+
+    .print_main_title {
+        font-size: 30px;
+        line-height: 1.2;
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+
+    .print_title {
+        font-size: 12px;
+        line-height: 1.2;
+        padding-bottom: 0;
+        margin-bottom: 7px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
     .g-wrap .outer-bg {
         padding-top: 0 !important;
     }
@@ -7459,5 +7479,47 @@ footer {
     .footer .container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .catalog_category_print_row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .catalog_category_print_row [class^="col"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .category_image {
+        padding-bottom: 0;
+        margin-bottom: 15px;
+    }
+
+    .category_short {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .category_short .icons {
+        padding-bottom: 0;
+        margin-bottom: 5px;
+    }
+
+    .category_short .icons img {
+        max-width: 13px;
+        margin-right: 2px;
+    }
+
+    .product_info_block {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .product_info_block table {
+        font-size: 12px;
+    }
+
+    .product_info_block table tr td {
+        padding: 10px;
     }
 }
