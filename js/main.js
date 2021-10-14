@@ -352,6 +352,7 @@ $(document).ready(function () {
 
     $(document).on("click", ".create_model_btn a", function (e) {
         e.preventDefault();
+        $(this).parent('.create_model_btn').addClass('active');
         var html = $("#model_row_empty2").html();
         $("#model_row_empty2").parents(".lk_reg_step5_table_inner").append('<div class="model_row model_row2">' + html + '</div>');
         var rows = $("#model_row_empty2").parents(".lk_reg_step5_table_inner").find(".model_row:not(.model_row_empty)").length;

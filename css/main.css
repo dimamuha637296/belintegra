@@ -4689,8 +4689,19 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../svg/icon_plus.svg) 50% 50% no-repeat;
     transition: 0.3s;
+}
+
+.add_model_btn a:before {
+    background: url(../svg/icon_plus.svg) 50% 50% no-repeat;
+}
+
+.create_model_btn a:before {
+    background: url(../svg/icon_plus_grey.svg) 50% 50% no-repeat;
+}
+
+.create_model_btn.active a:before {
+    background: url(../svg/icon_plus.svg) 50% 50% no-repeat;
 }
 
 .add_model_btn a:hover,
