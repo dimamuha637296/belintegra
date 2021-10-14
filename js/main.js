@@ -340,11 +340,24 @@ $(document).ready(function () {
     $(document).on("click", ".add_model_btn a", function (e) {
         e.preventDefault();
         var html = $("#model_row_empty").html();
-        $("#model_row_empty").parents("table").append('<tr>' + html + '</tr>');
-        var rows = $("#model_row_empty").parents("table").find("tr").length - 1;
+        $("#model_row_empty").parents(".lk_reg_step5_table_inner").append('<div class="model_row">' + html + '</div>');
+        var rows = $("#model_row_empty").parents(".lk_reg_step5_table_inner").find(".model_row:not(.model_row_empty)").length;
         $(".lk_reg_step_model_count span.count").html(rows);
-        $("#model_row_empty").parents("table").find("tr:last .jq-selectbox__select").remove();
-        $("#model_row_empty").parents("table").find("tr:last .jq-selectbox__dropdown").remove();
+        $("#model_row_empty").parents(".lk_reg_step5_table_inner").find(".model_row:last .jq-selectbox__select").remove();
+        $("#model_row_empty").parents(".lk_reg_step5_table_inner").find(".model_row:last .jq-selectbox__dropdown").remove();
+        $("select.styler").styler();
+        //see steps.js
+        steps.checkRequired();
+    })
+
+    $(document).on("click", ".create_model_btn a", function (e) {
+        e.preventDefault();
+        var html = $("#model_row_empty2").html();
+        $("#model_row_empty2").parents(".lk_reg_step5_table_inner").append('<div class="model_row model_row2">' + html + '</div>');
+        var rows = $("#model_row_empty2").parents(".lk_reg_step5_table_inner").find(".model_row:not(.model_row_empty)").length;
+        $(".lk_reg_step_model_count span.count").html(rows);
+        $("#model_row_empty2").parents(".lk_reg_step5_table_inner").find(".model_row:last .jq-selectbox__select").remove();
+        $("#model_row_empty2").parents(".lk_reg_step5_table_inner").find(".model_row:last .jq-selectbox__dropdown").remove();
         $("select.styler").styler();
         //see steps.js
         steps.checkRequired();
@@ -352,8 +365,8 @@ $(document).ready(function () {
 
     $(document).on("click", ".lk_reg_step_delete_row", function (e) {
         e.preventDefault();
-        $(this).parents("tr").remove();
-        var rows = $("#model_row_empty").parents("table").find("tr").length - 1;
+        $(this).parents(".model_row").remove();
+        var rows = $("#model_row_empty").parents(".lk_reg_step5_table_inner").find(".model_row:not(.model_row_empty)").length;
         $(".lk_reg_step_model_count span.count").html(rows);
         //see steps.js
         steps.checkRequired();

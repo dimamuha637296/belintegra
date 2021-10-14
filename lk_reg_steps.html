@@ -265,20 +265,33 @@
                                         <div class="table-responsive">
                                             <table class="table font2">
                                                 <tr>
-                                                    <td class="title">Полное наименование</td>
-                                                    <td class="values">ООО"Свет"</td>
+                                                    <td class="title">Полное
+                                                        наименование
+                                                    </td>
+                                                    <td class="values">ООО"Свет"
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="title">Контактное лицо</td>
-                                                    <td class="values">Артемьев Леонид Викторович</td>
+                                                    <td class="title">Контактное
+                                                        лицо
+                                                    </td>
+                                                    <td class="values">Артемьев
+                                                        Леонид Викторович
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="title">Телефон</td>
-                                                    <td class="values">+375 (29) 783 65 24</td>
+                                                    <td class="values">+375 (29) 783
+                                                        65 24
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="title">Электронная почта</td>
-                                                    <td class="values">leonid-viktor@mail.ru</td>
+                                                    <td class="title">Электронная
+                                                        почта
+                                                    </td>
+                                                    <td class="values">
+                                                        leonid-viktor@mail.ru
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -317,7 +330,9 @@
                                                     <td class="values">
                                                         <input type="hidden" name="obj_coord" value="">
                                                         <div class="reg_step_map" id="reg_step_map">
-                                                            <button class="tochka_info d-inline-block bg_blue">Уточнить точку</button>
+                                                            <button class="tochka_info d-inline-block bg_blue">Уточнить
+                                                                точку
+                                                            </button>
                                                             <div id="ymap"></div>
                                                             <span class="reg_step_map_capture font1">Вы можете скорректировать положение объекта, перемещая маркер на карте. Если расположение верное - нажмите кнопку Продолжить</span>
                                                         </div>
@@ -423,44 +438,261 @@
                                     </div>
                                     <div class="lk_reg_step lk_reg_step5">
                                         <div class="h2 text-center">Заказываемая спецификация</div>
-                                        <div class="lk_reg_step_model_count font2">Кол-во моделей: <span class="count">0</span>
+                                        <div class="lk_reg_step_model_count font2 d-none d-lg-block">Кол-во моделей:
+                                            <span class="count">2</span>
                                         </div>
-                                        <div class="table-responsive2">
-                                            <div class="lk_reg_step5_table">
-                                                <table class="table font2">
-                                                    <tr class="model_row_empty do_not_check" id="model_row_empty">
-                                                        <td class="title title_select">Код</td>
-                                                        <td class="values values_select">
-                                                            <div class="form_field form_field_selector">
-                                                                <select class="styler  required">
-                                                                    <option value="">Код</option>
-                                                                    <option value="HJ48KSM36">HJ48KSM36</option>
-                                                                    <option value="HJ48KSM36">HJ48KSM37</option>
-                                                                    <option value="HJ48KSM36">HJ48KSM38</option>
-                                                                    <option value="HJ48KSM36">HJ48KSM39</option>
-                                                                </select>
-                                                            </div>
-                                                        </td>
-                                                        <td class="title">Серия</td>
-                                                        <td class="values">
-                                                            <div class="form_field">
-                                                                <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Серия" readonly>
-                                                            </div>
-                                                        </td>
-                                                        <td class="title">Кол-во</td>
-                                                        <td class="values">
-                                                            <div class="form_field">
-                                                                <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Кол-во">
-                                                            </div>
-                                                        </td>
-                                                        <td class="del">
-                                                            <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">Удалить
-                                                                модель</a></td>
-                                                    </tr>
-                                                </table>
+                                        <div class="lk_reg_step5_table">
+                                            <div class="lk_reg_step5_table_inner font2">
+                                                <div class="model_row model_row_empty do_not_check" id="model_row_empty">
+                                                    <table class="model_row_table">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Код</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Код" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Модицикация</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Модицикация" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-none d-lg-table-cell">
+                                                                <div class="del">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Кол-во</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Кол-во">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Серия</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Серия" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-block d-lg-none">
+                                                                <div class="del text-center">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="model_row model_row2 model_row_empty do_not_check" id="model_row_empty2">
+                                                    <table class="model_row_table">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Код</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Код" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Модицикация</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Модицикация" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-none d-lg-table-cell">
+                                                                <div class="del">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Кол-во</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Кол-во">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Серия</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Серия" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-block d-lg-none">
+                                                                <div class="del text-center">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="model_row">
+                                                    <table class="model_row_table">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Код</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Код" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title text-lg-end">Модицикация</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Модицикация" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-none d-lg-table-cell">
+                                                                <div class="del">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Кол-во</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Кол-во">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title text-lg-end">Серия</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Серия" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-block d-lg-none">
+                                                                <div class="del text-center">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="model_row model_row2">
+                                                    <table class="model_row_table">
+                                                        <tr>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Код</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Код" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title text-lg-end">Серия</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field form_field_selector">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Серия" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-none d-lg-table-cell">
+                                                                <div class="del">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <div class="model_row_table_td_inner">
+                                                                    <div class="title">Наименование</div>
+                                                                    <div class="values">
+                                                                        <div class="form_field">
+                                                                            <input type="text" name="" value="" class="inp_txt font2 required" placeholder="Наименование">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="del_wrap d-block d-lg-none">
+                                                                <div class="del text-center">
+                                                                    <a href="" class="d-inline-block lk_reg_step_delete_row" title="удалить">
+                                                                        Удалить модель
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
                                             </div>
-                                            <div class="add_model_btn text-center">
-                                                <a href="" class="d-inline-block font2">Добавить модель</a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="add_model_btn text-center text-lg-start">
+                                                    <a href="" class="d-inline-block font2">Добавить модель</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="create_model_btn text-center text-lg-end">
+                                                    <a href="" class="d-inline-block font2">Создать модель</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -469,7 +701,8 @@
                                             <a href="" class="d-inline-block back">Назад</a> &nbsp;
                                         </div>
                                         <div class="btn_right text-center text-lg-end">
-                                            <a href="" class="d-inline-block next_step" data-next-step="">ПРОДОЛЖИТЬ</a></div>
+                                            <a href="" class="d-inline-block next_step" data-next-step="">ПРОДОЛЖИТЬ</a>
+                                        </div>
                                         <div class="btn_left text-center text-lg-start d-block d-lg-none">
                                             <a href="" class="d-inline-block back">Назад</a> &nbsp;
                                         </div>
