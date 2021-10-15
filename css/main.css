@@ -2662,7 +2662,62 @@ a.btn_print:hover:before {
     align-items: flex-end;
 }
 
-.model_list table thead td span:not(.icon):not(:last-child) {
+.model_list table thead td.with-select .tablesorter-header-inner {
+    display: inline-block;
+    position: relative;
+}
+
+.model_list table thead td .select-wrap {
+    display: inline-block;
+}
+
+.model_list table thead td .jq-selectbox {
+    position: static;
+    max-width: 226px;
+}
+
+.model_list table thead td .jq-selectbox select {
+    display: none;
+}
+
+.model_list table thead td .jq-selectbox__select {
+    border: none;
+    padding: 0 18px 0 0;
+    height: 19px;
+    background: transparent;
+}
+
+.model_list table thead td .jq-selectbox__select-text {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #fff;
+    height: 19px;
+}
+
+
+.model_list table thead td .jq-selectbox.changed .jq-selectbox__select-text {
+    display: block;
+}
+
+.model_list table thead td .jq-selectbox__trigger {
+    /*display: none;*/
+    width: 10px;
+    height: 5px;
+    top: 8px;
+    right: 0;
+    background-image: url(../svg/select_white.svg);
+}
+
+.model_list table thead td .jq-selectbox__dropdown {
+    border: none;
+    border-radius: 0;
+    left: 0;
+}
+
+.model_list table thead td:not(.with-select) span:not(.icon):not(:last-child) {
     margin-right: 8px;
 }
 
