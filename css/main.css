@@ -2663,7 +2663,7 @@ a.btn_print:hover:before {
 }
 
 .model_list table thead td.with-select .tablesorter-header-inner {
-    display: inline-block;
+    display: flex;
     position: relative;
 }
 
@@ -2715,6 +2715,8 @@ a.btn_print:hover:before {
     border: none;
     border-radius: 0;
     left: 0;
+    width: fit-content;
+    max-width: 225px;
 }
 
 .model_list table thead td:not(.with-select) span:not(.icon):not(:last-child) {

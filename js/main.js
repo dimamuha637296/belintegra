@@ -549,9 +549,11 @@ $(document).ready(function () {
                         onSelectClosed: function () {
                             if ($(this).closest('.tablesorter').length > 0) {
                                 if ($(this).hasClass('changed')) {
-                                    $(this).parent('.select-wrap').css('display', 'table');
+                                    $(this).closest('.select-wrap').css('display', 'table');
+                                    $(this).closest('.tablesorter-header-inner').css('display', 'inline-block');
                                 } else {
-                                    $(this).parent('.select-wrap').css('display', 'inline-block');
+                                    $(this).closest('.select-wrap').css('display', 'inline-block');
+                                    $(this).closest('.tablesorter-header-inner').css('display', 'flex');
                                 }
                             }
                         }
