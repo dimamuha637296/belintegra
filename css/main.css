@@ -1108,11 +1108,10 @@ a.btn_print:hover:before {
 }
 
 .owl-carousel-main-slider .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     display: inline-block;
-    margin: 0 10px;
-    border-radius: 50%;
+    margin: 0 8px;
     border: solid 1px #ffffff;
 }
 
@@ -3760,11 +3759,10 @@ footer {
 }
 
 .owl-carousel.blue-dots .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     display: inline-block;
-    margin: 0 10px;
-    border-radius: 50%;
+    margin: 0 8px;
     border: solid 1px #00679A;;
 }
 
