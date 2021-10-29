@@ -1399,13 +1399,18 @@ a.btn_print:hover:before {
 .mp_catalog_list_main .item.big a.item_inner {
     font-size: 20px;
     line-height: 140%;
-    padding: 40px 20px 40px 150px;
+    padding: 40px 20px 40px 165px;
     min-height: 150px;
 }
 
 .mp_catalog_list_main .big a.item_inner .item_icon {
-    top: 40px;
-    left: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
     margin-left: 0;
 }
 
@@ -7054,14 +7059,16 @@ footer {
         text-transform: none;
         font-size: 14px;
         min-height: auto;
-        padding: 20px 20px 20px 70px;
+        padding: 20px 20px 20px 110px;
         text-align: left;
     }
 
     .mp_catalog_menu_main_mob .mp_catalog_list_main .big a.item_inner .item_icon {
-        top: 35px;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
         margin-left: 0;
-        left: 20px;
     }
 
     .mp_catalog_list_main .item.big {
