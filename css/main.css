@@ -2453,6 +2453,10 @@ a.btn_print:hover:before {
     height: auto;
 }
 
+.catalog_list .icons img:nth-child(n + 5) {
+    display: none;
+}
+
 .catalog_list .labels {
     position: absolute;
     top: 11px;
