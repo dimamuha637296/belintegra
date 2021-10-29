@@ -2411,6 +2411,10 @@ a.btn_print:hover:before {
     text-decoration: none;
 }
 
+.catalog_list a.item:hover {
+    transform: scale(1.02);
+}
+
 @media (max-width: 767px) {
 
     .catalog_list a.item {
