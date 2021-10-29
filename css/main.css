@@ -2922,7 +2922,7 @@ a.favorite.active:after {
 .model_list table tbody tr:hover {
     color: #ffffff;
     cursor: pointer;
-    background: #00679A;
+    background: #526470;
 }
 
 .model_list table tbody tr:hover td {
