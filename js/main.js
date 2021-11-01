@@ -122,27 +122,71 @@ $(document).ready(function () {
         });
     }
 
-    if ($(".owl-portfolio_item-slider").length > 0) {
-        $(".owl-portfolio_item-slider").owlCarousel({
-            /*items:9,*/
-            responsive: {
-                0: {
-                    items: 1,
-                    stagePadding: 30,
+    !function () {
+        'use strict';
+
+        function popupGallery () {
+            var gallery = $('.popup-gallery');
+            if (!gallery.length) {
+                return false;
+            }
+            var galleryLinks = gallery.find('.owl-item:not(.cloned) a');
+            galleryLinks.magnificPopup({
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    tCounter: '<span class="mfp-counter">%curr% / %total%</span>',
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
                 },
-                768: {
-                    items: 1,
-                    stagePadding: 80,
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function () {
+                        return false;
+                    }
                 },
-                992: {
-                    items: 1,
-                    stagePadding: 200,
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function(element) {
+                        return element.find('img');
+                    }
                 }
-            },
-            loop: true,
-            /*nav:true*/
+            });
+        }
+
+        //https://github.com/kenwheeler/slick/
+        function initSlider() {
+            if ($(".owl-portfolio_item-slider").length > 0) {
+                $(".owl-portfolio_item-slider").owlCarousel({
+                    /*items:9,*/
+                    responsive: {
+                        0: {
+                            items: 1,
+                            stagePadding: 30,
+                        },
+                        768: {
+                            items: 1,
+                            stagePadding: 80,
+                        },
+                        992: {
+                            items: 1,
+                            stagePadding: 200,
+                        }
+                    },
+                    loop: true,
+                    /*nav:true*/
+                });
+            }
+        }
+
+        $(function () {
+            initSlider();
+            popupGallery();
         });
-    }
+    }();
 
     if ($(".owl-mp2-slider").length > 0) {
         $(".owl-mp2-slider").owlCarousel({
