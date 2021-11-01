@@ -65,8 +65,15 @@ $(document).ready(function () {
 
     if ($(".owl-carousel-catalog-menu-slider").length > 0) {
         $(".owl-carousel-catalog-menu-slider").owlCarousel({
-            items: 9,
             loop: true,
+            responsive: {
+                0: {
+                    items: 6,
+                },
+                1200: {
+                    items: 9,
+                }
+            },
             //nav:true
         });
     }
