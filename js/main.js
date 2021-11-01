@@ -580,4 +580,24 @@ $(document).ready(function () {
             theme: "dark"
         });
     }
+
+    $(function () {
+        if ($('.jsCounterUp').length) {
+            var options = {
+                useEasing: true,
+                useGrouping: true,
+                separator: ' ',
+                decimal: '.',
+                prefix: '',
+                suffix: ''
+            };
+            $('.jsCounterUp').each(function() {
+                var num = $(this).text();
+                var counts = new CountUp(this, 0, num, 0, 4, options);
+                counts.start();
+            });
+        }
+    });
+
+
 })
