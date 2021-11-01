@@ -1978,6 +1978,23 @@ a.btn_print:hover:before {
     cursor: pointer;
 }
 
+.filter_wrapper .filter_block .filter_block_values .row {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -10px;
+}
+
+.filter_wrapper .filter_block .filter_block_values .row > [class^="col"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.filter_wrapper .filter_block .filter_block_values .inp_txt {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
 .filter_wrapper .filter_block .filter_block_values label input[type='checkbox'] {
     display: none;
 }
