@@ -2641,7 +2641,33 @@ a.btn_print:hover:before {
     margin-bottom: 20px;
 }
 
+.examples .item .img-wrap {
+    display: block;
+    position: relative;
+    padding: 100% 0 0;
+}
+
+@media (max-width: 575px) {
+
+    .examples .item .img-wrap {
+        padding: 289px 0 0;
+    }
+}
+
+.examples .item .img-inner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .examples a.item img {
+    display: block;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: 0.3s;
