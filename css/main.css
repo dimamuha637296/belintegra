@@ -6243,21 +6243,51 @@ footer {
 .vacancies-items__item {
     flex: 0 0 100%;
     max-width: 100%;
+    border-top: 1px solid #c4c4c4;
+}
+
+.vacancies-items__item:last-child {
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.vacancies-items__item-inner {
     padding-top: 40px;
     padding-bottom: 36px;
-    border-top: 1px solid #c4c4c4;
 }
 
 @media (max-width: 575px) {
 
-    .vacancies-items__item {
+    .vacancies-items__item-inner {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 }
 
-.vacancies-items__item:last-child {
-    border-bottom: 1px solid #c4c4c4;
+.vacancies-items__item-row {
+    display: flex;
+}
+
+.vacancies-items__item-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancies-items__item-col--pic {
+    flex: 0 0 263px;
+    max-width: 263px;
+}
+
+.vacancies-items__item-col--text {
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-left: 30px;
+}
+
+@media (max-width: 991px) {
+
+    .vacancies-items__item-col--text {
+        padding-left: 0;
+    }
 }
 
 .vacancies-items__title {
