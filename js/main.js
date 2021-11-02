@@ -135,6 +135,8 @@ $(document).ready(function () {
                 type: 'image',
                 tLoading: 'Loading image #%curr%...',
                 mainClass: 'mfp-img-mobile',
+                closeOnContentClick: false,
+                closeBtnInside: false,
                 gallery: {
                     enabled: true,
                     tCounter: '<span class="mfp-counter">%curr% / %total%</span>',
