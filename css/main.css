@@ -1012,7 +1012,7 @@ a.btn_print:hover:before {
 .owl-carousel-main-slider .owl-prev,
 .owl-carousel-main-slider .owl-next {
     display: block;
-    width: 60px;
+    width: 40px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -1026,13 +1026,13 @@ a.btn_print:hover:before {
 }
 
 .owl-carousel-main-slider .owl-prev {
-    left: calc(50% - 440px);
+    left: calc(50% - 450px);
 }
 
 @media (min-width: 1200px) {
 
     .owl-carousel-main-slider .owl-prev {
-        left: calc(50% - 520px);
+        left: calc(50% - 540px);
     }
 
 }
@@ -1040,7 +1040,7 @@ a.btn_print:hover:before {
 @media (min-width: 1400px) {
 
     .owl-carousel-main-slider .owl-prev {
-        left: calc(50% - 620px);
+        left: calc(50% - 630px);
     }
 }
 
@@ -1052,20 +1052,20 @@ a.btn_print:hover:before {
 }
 
 .owl-carousel-main-slider .owl-next {
-    left: calc(50% + 440px);
+    left: calc(50% + 450px);
 }
 
 @media (min-width: 1200px) {
 
     .owl-carousel-main-slider .owl-next {
-        left: calc(50% + 520px);
+        left: calc(50% + 540px);
     }
 }
 
 @media (min-width: 1400px) {
 
     .owl-carousel-main-slider .owl-next {
-        left: calc(50% + 620px);
+        left: calc(50% + 630px);
     }
 }
 
@@ -1084,10 +1084,10 @@ a.btn_print:hover:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #fff;
-    background: url(../svg/arrow_right_white.svg) 50% 50% no-repeat;
+    background: url(../svg/arrow_right_2_white.svg) no-repeat 50% 50% / 17px;
 }
 
 .owl-carousel-main-slider .owl-prev:before {
