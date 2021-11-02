@@ -7840,3 +7840,228 @@ footer {
         padding: 9px 10px;
     }
 }
+
+.search-head-5 {
+
+}
+
+.search-head-5 .backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(28,28,28,.9);
+}
+
+.search-head-5 .wrap {
+    line-height: 1;
+}
+
+.search-head-5 .btn-open {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .btn-open {
+        padding-top: 24px;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 120%;
+        color: #000000;
+    }
+}
+
+.search-head-5 .btn-open:hover,
+.search-head-5 .btn-open:focus {
+    cursor: pointer;
+}
+
+.search-head-5 .btn-open:before {
+    margin-top: 2px;
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    transition: all .3s;
+    background-image: url(../svg/icon_search_top.svg);
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .btn-open:before {
+        width: 18px;
+        height: 18px;
+        margin-top: 4px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(../svg/icon_search_mob.svg);
+    }
+}
+
+.search-head-5 .btn-open:hover:before,
+.search-head-5 .btn-open:focus:before {
+    background-image: url(../svg/icon_search_top_active.svg);
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .btn-open:hover:before,
+    .search-head-5 .btn-open:focus:before {
+        background-image: url(../svg/icon_search_mob_active.svg);
+    }
+}
+
+.search-head-5 .search-form {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    border-radius: 0;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+}
+
+.search-head-5 .search-form:before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    width: 1920px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -960px;
+    background-color: transparent;
+    box-shadow: 0 4px 15px rgba(0,0,0,.14);
+}
+
+.search-head-5 .form-wrap {
+    padding: 30px 35px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .form-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.search-head-5 .field {
+    width: 100%;
+    padding: 9px 0 8px;
+    border: none;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .field {
+        font-size: 18px;
+    }
+}
+
+.search-head-5 .field::-webkit-search-decoration,
+.search-head-5 .field::-webkit-search-cancel-button,
+.search-head-5 .field::-webkit-search-results-button,
+.search-head-5 .field::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+.search-head-5 .btn-search {
+    flex: 1 0 auto;
+    padding: 15px 50px;
+    background: #00679A;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .btn-search {
+        padding: 10px 30px;
+    }
+}
+
+.search-head-5 .btn-close {
+    position: absolute;
+    top: -60px;
+    right: 29px;
+    width: 35px;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+@media (max-width: 991px) {
+
+    .search-head-5 .btn-close {
+        right: -10px;
+    }
+}
+
+.search-head-5 .btn-close:before,
+.search-head-5 .btn-close:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    backface-visibility: hidden;
+}
+
+.search-head-5 .btn-close:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.search-head-5 .btn-close:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.search-head-5.active {
+
+}
+
+.search-head-5.active .backdrop {
+    z-index: 998;
+    display: block;
+}
+
+.search-head-5.active .search-form {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+.search-head-5.active .btn-search {
+    opacity: 1;
+}
+
+.search-head-5.active .btn-close {
+    opacity: 1;
+}
