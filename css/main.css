@@ -3948,9 +3948,9 @@ footer {
     top: 50%;
     transform: translateY(calc(-50% - 40px));
     left: 130px;
-    width: 60px;
-    height: 60px;
-    border: solid 1px #909090;
+    width: 42px;
+    height: 42px;
+    /*border: solid 1px #909090;*/
 }
 
 .owl-portfolio_item-slider_outer .slider-nav.right_arrow {
@@ -3958,9 +3958,9 @@ footer {
     bottom: 0;
     right: 130px;
     left: auto;
-    width: 60px;
-    height: 60px;
-    border: solid 1px #909090;
+    width: 42px;
+    height: 42px;
+    /*border: solid 1px #909090;*/
 }
 
 .owl-portfolio_item-slider_outer .slider-nav > div {
