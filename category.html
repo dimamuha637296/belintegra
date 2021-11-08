@@ -355,7 +355,7 @@
 
                                 <div class="js_tab category_tab category_tab1 simple_text">
                                     <a href="" class="js-tab-switcher-mob tab_mob_title">Описание</a>
-                                    <div class="js-tab-content">
+                                    <div class="js-tab-content js-popup-gallery">
                                         <h4>УСТАНОВКА</h4>
                                         <p>Монтаж осуществляется непосредственно на потолок при помощи поставляемых
                                             комплектно-монтажных держателей или на подвесах при помощи цепей (см.
@@ -399,13 +399,7 @@
                                             кр. - специальный светотехнический прозрачный пластик с призматической
                                             поверхностью.
                                             оп.- матовый гладкий поликарбонат.</p>
-                                        <div class="row js-popup-gallery">
-                                            <div class="col-12">
-                                                <a href="imgs/category_text.png" class="link" title="Фото">
-                                                    <img class="img-fluid" src="imgs/category_text.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <img class="img-fluid" src="imgs/category_text.png" alt="" title="ОПТИЧЕСКАЯ ЧАСТЬ">
                                         <p>&nbsp;</p>
                                         <p>Индекс цветопередачи Ra >80 (Ra>90 -под заказ)<br>
                                             Коэффициент пульсации светового потока ≤ 2%<br>
@@ -1008,11 +1002,11 @@
             if (!galleryList.length || !$.fn.magnificPopup) {
                 return false;
             }
-            galleryList.find('.link').each(function () {
+            galleryList.find('img').each(function () {
                 var self = $(this);
                 var data = self.data('gallery');
                 var src = [{
-                    src: self.attr('href'),
+                    src: self.attr('src'),
                     title: self.attr('title')
                 }];
                 if ((typeof data) !== 'undefined') {
