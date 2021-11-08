@@ -4042,9 +4042,8 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     left: 30px;
-    width: 60px;
-    height: 60px;
-    border: solid 1px #909090;
+    width: 42px;
+    height: 42px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4066,9 +4065,8 @@ footer {
     bottom: 0;
     right: 30px;
     left: auto;
-    width: 60px;
-    height: 60px;
-    border: solid 1px #909090;
+    width: 42px;
+    height: 42px;
 }
 
 @media only screen and (max-width: 991px) {
