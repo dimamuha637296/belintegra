@@ -1088,6 +1088,7 @@ a.btn_print:hover:before {
     height: 40px;
     border: 1px solid #fff;
     background: url(../svg/arrow_right_2_white.svg) no-repeat 50% 50% / 17px;
+    opacity: .4;
 }
 
 .owl-carousel-main-slider .owl-prev:before {
