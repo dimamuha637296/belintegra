@@ -2558,6 +2558,10 @@ a.btn_print:hover:before {
     position: relative;
 }
 
+.category_image a {
+    display: block;
+}
+
 .category_short {
     padding-bottom: 50px;
 }
@@ -3528,6 +3532,15 @@ footer {
     position: relative;
     transition: 0.3s;
     text-decoration: none;
+    overflow: hidden;
+}
+
+.downloads_list a.item > img {
+    transition: .3s;
+}
+
+.downloads_list a.item:hover > img {
+    transform: scale(1.1);
 }
 
 .downloads_list a.item .pic {
@@ -6513,10 +6526,16 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .tech-cap-items__img {
     display: block;
+    transition: all .3s;
+}
+
+.tech-cap-items__card:hover .tech-cap-items__img {
+    transform: scale(1.1);
 }
 
 .tech-cap-items__title {
