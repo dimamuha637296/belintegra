@@ -21,7 +21,7 @@ $(document).ready(function () {
         $(".owl-carousel-partners-slider").owlCarousel({
             /*items:9,*/
             autoplay: true,
-            autoplayTimeout: 2000,
+            autoplayTimeout: scrollDelayPartners,
             responsive: {
                 0: {
                     items: 1,
@@ -214,7 +214,7 @@ $(document).ready(function () {
             },
             loop: true,
             autoplay: true,
-            autoplayTimeout: 2000
+            autoplayTimeout: scrollDelayPortfolio
         });
     }
 
