@@ -2810,7 +2810,8 @@ a.btn_print:hover:before {
     margin-right: 8px;
 }
 
-.model_list table thead td .icon {
+.model_list table thead td .icon,
+.model_list table thead td .icon-sort {
     display: inline-block;
     cursor: pointer;
 }
@@ -2827,8 +2828,25 @@ a.btn_print:hover:before {
     vertical-align: middle;
 }
 
-.model_list table thead td.active .icon:before {
+.model_list table thead td.active .icon:before,
+.model_list table thead td.filter-on .icon:before {
     background-image: url(../svg/filter-table-active.svg);
+}
+
+.model_list table thead td .icon-sort:before {
+    content: '';
+    display: inline-block;
+    background-image: url(../svg/arrow-table.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 8px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.model_list table thead td.tablesorter-headerAsc .icon-sort:before {
+    transform: rotate(180deg);
 }
 
 .model_list table thead td .filter-wrap {
@@ -2857,6 +2875,24 @@ a.btn_print:hover:before {
 .model_list table thead td .filter-wrap .inp_txt {
     min-width: 160px;
     margin-bottom: 0;
+}
+
+.model_list table thead td .filter-wrap .filter-btn {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #00679A;
+    border: none;
+    padding: 13px 5px;
+}
+
+.model_list table thead td .filter-wrap .filter-btn[disabled] {
+    background: #F8F8F8;
+    color: #B4B4BB;
 }
 
 .model_list table thead td .filter-wrap .row [class^="col"] {

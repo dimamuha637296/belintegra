@@ -437,6 +437,45 @@ $(document).ready(function () {
         }
     })
 
+    $(document).on("click", '.model_list table thead td .filter-wrap input[type="checkbox"]', function (e) {
+        var flag = false;
+        var checkboxes = $(this).closest('.filter-wrap').find('input[type="checkbox"]');
+        checkboxes.each(function () {
+            var self = $(this);
+            if (self.is(':checked')) {
+                flag = true;
+                return false;
+            }
+        });
+
+        if (flag) {
+            $(this).closest('td').addClass('filter-on');
+        } else {
+            $(this).closest('td').removeClass('filter-on');
+        }
+    })
+
+    $(document).on("input", '.model_list table thead td .filter-wrap input:not([type="checkbox"])', function (e) {
+        var flag = false;
+        var inputs = $(this).closest('.filter-wrap').find('input:not([type="checkbox"])');
+        inputs.each(function () {
+            var self = $(this);
+            if (self.val() !== '') {
+                flag = true;
+                return false;
+            }
+        });
+
+        if (flag) {
+            $(this).closest('td').addClass('filter-on');
+            $(this).closest('.filter-wrap').find('.filter-btn').removeAttr('disabled');
+        }
+        else {
+            $(this).closest('td').removeClass('filter-on');
+            $(this).closest('.filter-wrap').find('.filter-btn').attr('disabled', 'true');
+        }
+    })
+
     $(document).on("click", ".chat_block .chat_button_close", function (e) {
         e.preventDefault();
         $(this).parents(".chat_block").toggleClass("active");
