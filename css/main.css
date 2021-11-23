@@ -8242,6 +8242,11 @@ footer {
     }
 }
 
+.portfolio-client-items__card {
+    display: block;
+    text-decoration: none;
+}
+
 .portfolio-client-items__img-wrap {
     position: relative;
     padding: 71% 0 0;
