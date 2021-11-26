@@ -455,6 +455,11 @@ $(document).ready(function () {
         }
     })
 
+    $(document).on("click", '.model_list .filter-btn', function (e) {
+        var self = $(this);
+        self.closest('td').removeClass('active');
+    })
+
     $(document).on("input", '.model_list table thead td .filter-wrap input:not([type="checkbox"])', function (e) {
         var flag = false;
         var inputs = $(this).closest('.filter-wrap').find('input:not([type="checkbox"])');
