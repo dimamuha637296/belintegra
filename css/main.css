@@ -224,6 +224,10 @@ a.btn_blue {
     padding-left: 0 !important;
 }
 
+.content_wrapper_pl-0 {
+    padding-left: 0;
+}
+
 .with_icon {
     padding-left: 33px;
     position: relative;
@@ -2300,6 +2304,13 @@ a.btn_print:hover:before {
     flex-direction: column;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+@media (min-width: 1200px) {
+    .catalog_table > .row > .col-xl-x5 {
+        flex: 0 0 20%;
+        width: 20%;
+    }
 }
 
 .catalog_table a.item {
