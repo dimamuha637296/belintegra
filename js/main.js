@@ -664,6 +664,42 @@ $(document).ready(function () {
         }
     });
 
+    !function () {
+        'use strict';
+
+        var oWindow = $(window);
+
+        function tableResponsiveFiltersHeight() {
+            var table = $('.table-responsive');
+            if (!table.length) {
+                return false;
+            }
+            var filters = table.find('.filter-wrap');
+            var theadH = table.find('table thead').outerHeight();
+            var minFiltersHeight = 0;
+            filters.each(function() {
+                var self = $(this).outerHeight();
+                if (minFiltersHeight < self) {
+                    minFiltersHeight = self;
+                }
+            });
+            var result = theadH + minFiltersHeight + 40;
+            table.css('min-height', result + 'px');
+        }
+
+        $(function () {
+            tableResponsiveFiltersHeight();
+        });
+
+        oWindow.on('load', function () {
+            tableResponsiveFiltersHeight();
+        });
+
+        oWindow.on('resize', function () {
+            tableResponsiveFiltersHeight();
+        });
+    }();
+
     if ($(".jsCustomScrollbar").length && $.fn.mCustomScrollbar) {
         $(".jsCustomScrollbar.jsCustomScrollbar-x").mCustomScrollbar({
             axis: "x",
