@@ -125,7 +125,7 @@ $(document).ready(function () {
     !function () {
         'use strict';
 
-        function popupGallery () {
+        function popupGallery() {
             var gallery = $('.popup-gallery');
             if (!gallery.length) {
                 return false;
@@ -152,7 +152,7 @@ $(document).ready(function () {
                 zoom: {
                     enabled: true,
                     duration: 300, // don't foget to change the duration also in CSS
-                    opener: function(element) {
+                    opener: function (element) {
                         return element.find('img');
                     }
                 }
@@ -474,8 +474,7 @@ $(document).ready(function () {
         if (flag) {
             $(this).closest('td').addClass('filter-on');
             $(this).closest('.filter-wrap').find('.filter-btn').removeAttr('disabled');
-        }
-        else {
+        } else {
             $(this).closest('td').removeClass('filter-on');
             $(this).closest('.filter-wrap').find('.filter-btn').attr('disabled', 'true');
         }
@@ -677,7 +676,7 @@ $(document).ready(function () {
             var filters = table.find('.filter-wrap');
             var theadH = table.find('table thead').outerHeight();
             var minFiltersHeight = 0;
-            filters.each(function() {
+            filters.each(function () {
                 var self = $(this).outerHeight();
                 if (minFiltersHeight < self) {
                     minFiltersHeight = self;
@@ -700,6 +699,53 @@ $(document).ready(function () {
         });
     }();
 
+    !function () {
+        'use strict';
+
+        var oWindow = $(window);
+
+        function filtersCount() {
+            var num = 0;
+            var counter = $('.reset_filters_counter');
+            if (!counter.length) {
+                return false;
+            }
+            var filters = $('.model_list table .filter-wrap ');
+
+            filters.each(function () {
+                var a = $(this).find('input');
+                a.each(function () {
+                    if ($(this).attr('type') === 'checkbox') {
+                        if ($(this).is(':checked')) {
+                            num++;
+                            return false;
+                        }
+                    } else {
+                        if ($(this).val() != false) {
+                            num++;
+                            return false;
+                        }
+                    }
+                });
+            });
+            counter.text('(' + num + ')');
+        }
+
+        $(function () {
+            $(document).on("click", ".model_list table thead td .icon", function (e) {
+                filtersCount();
+            });
+
+            $(document).on("click", '.model_list .filter-btn', function (e) {
+                filtersCount();
+            })
+        });
+
+        oWindow.on('load', function () {
+            filtersCount();
+        });
+    }();
+
     if ($(".jsCustomScrollbar").length && $.fn.mCustomScrollbar) {
         $(".jsCustomScrollbar.jsCustomScrollbar-x").mCustomScrollbar({
             axis: "x",
@@ -717,7 +763,7 @@ $(document).ready(function () {
                 prefix: '',
                 suffix: ''
             };
-            $('.jsCounterUp').each(function() {
+            $('.jsCounterUp').each(function () {
                 var num = $(this).text();
                 var counts = new CountUp(this, 0, num, 0, 4, options);
                 counts.start();
@@ -733,7 +779,7 @@ $(document).ready(function () {
             searchField.trigger('blur');
             $('body').css('overflow', 'auto');
 
-            if(timeout !== undefined) {
+            if (timeout !== undefined) {
                 clearTimeout(timeout);
             }
         }
