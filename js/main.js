@@ -666,8 +666,6 @@ $(document).ready(function () {
     !function () {
         'use strict';
 
-        var oWindow = $(window);
-
         function tableResponsiveFiltersHeight() {
             var table = $('.table-responsive');
             if (!table.length) {
@@ -683,19 +681,25 @@ $(document).ready(function () {
                 }
             });
             var result = theadH + minFiltersHeight + 40;
-            table.css('min-height', result + 'px');
+            return result;
+        }
+
+        function tableResponsiveEvent() {
+            $(document).on("click", ".model_list table thead td .icon", function (e) {
+                var table = $(this).closest('.table-responsive');
+                var td = $(this).closest('td');
+
+                if (td.hasClass('active')) {
+                    table.css('min-height', (tableResponsiveFiltersHeight() - 40) + 'px');
+                    console.log(tableResponsiveFiltersHeight());
+                } else {
+                    table.css('min-height', 'auto');
+                }
+            })
         }
 
         $(function () {
-            tableResponsiveFiltersHeight();
-        });
-
-        oWindow.on('load', function () {
-            tableResponsiveFiltersHeight();
-        });
-
-        oWindow.on('resize', function () {
-            tableResponsiveFiltersHeight();
+            tableResponsiveEvent();
         });
     }();
 
