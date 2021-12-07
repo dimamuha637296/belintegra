@@ -437,6 +437,28 @@ $(document).ready(function () {
         }
     })
 
+    $(document).on("click", ".reset_filters", function (e) {
+        $(this).find('.reset_filters_counter').text('');
+
+        var filters = $('.model_list table .filter-wrap ');
+
+        filters.each(function () {
+            $(this).closest('td').removeClass('filter-on active');
+
+            var a = $(this).find('input');
+            a.each(function () {
+
+                if ($(this).attr('type') === 'checkbox') {
+                    $(this).prop('checked', false);
+                } else {
+                    $(this).val('');
+                    $(this).closest('.filter-wrap').find('.filter-btn').attr('disabled', 'true');
+                }
+            });
+        });
+
+    })
+
     $(document).on("click", '.model_list table thead td .filter-wrap input[type="checkbox"]', function (e) {
         var flag = false;
         var checkboxes = $(this).closest('.filter-wrap').find('input[type="checkbox"]');
@@ -691,7 +713,6 @@ $(document).ready(function () {
 
                 if (td.hasClass('active')) {
                     table.css('min-height', (tableResponsiveFiltersHeight() - 40) + 'px');
-                    console.log(tableResponsiveFiltersHeight());
                 } else {
                     table.css('min-height', 'auto');
                 }
