@@ -20,6 +20,50 @@ table {
     width: 100%;
     border: 1px;
     border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table > thead {
+    vertical-align: middle;
+}
+
+table thead tr {
+    background: #00679A;
+}
+
+table thead td,
+table thead th {
+    position: relative;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+table > tbody {
+    vertical-align: inherit;
+}
+
+table tbody td {
+    padding: 20px;
+    color: #000000;
+    border: none;
+    transition: all .2s;
+}
+
+table tbody tr {
+    transition: all .2s;
+}
+
+table tbody tr:nth-child(even) {
+    background: #F6F8FA;
+}
+
+table tbody tr:hover {
+    cursor: pointer;
+    background: #526470;
+}
+
+table tbody tr:hover td {
+    color: #fff;
 }
 
 .g-wrap {
@@ -3193,6 +3237,10 @@ a.favorite.active:after {
     background: #F6F8FA;
 }
 
+.product_info_block table tr:nth-child(even) {
+    background: #fff;
+}
+
 .product_info_block table tr td {
     padding: 20px;
     border: none;
@@ -3206,7 +3254,7 @@ a.favorite.active:after {
 
 .product_info_block table tr:hover td {
     background: #00679A;
-    border-color: #00679A;
+    /*border-color: #00679A;*/
     color: #fff;
 }
 
@@ -4787,6 +4835,18 @@ footer {
     margin-bottom: 0;
 }
 
+.lk_reg_step .table tbody tr:nth-child(even) {
+    background: transparent;
+}
+
+.lk_reg_step .table tbody tr:hover {
+    background: transparent;
+}
+
+.lk_reg_step .table tbody tr:hover td {
+    color: inherit;
+}
+
 .lk_reg_step .table td {
     border: none;
     padding: 0;
@@ -5039,6 +5099,14 @@ footer {
     padding: 10px 10px 10px;
 }
 
+.lk_obj_list table tbody tr:hover {
+    background: inherit;
+}
+
+.lk_obj_list table tbody tr:nth-child(even) {
+    background: inherit;
+}
+
 .lk_obj_list table tbody tr.even {
     background: #F6F8FA;
 }
@@ -5046,6 +5114,10 @@ footer {
 .lk_obj_list table tbody td {
     color: #000000;
     border: solid 1px #E5E8EC;
+}
+
+.lk_obj_list table tbody tr:hover td {
+    color: inherit;
 }
 
 .lk_obj_list_filter {
