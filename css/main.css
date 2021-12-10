@@ -2959,10 +2959,11 @@ a.btn_print:hover:before {
     width: 8px;
     height: 16px;
     vertical-align: middle;
+    transform: rotate(180deg);
 }
 
 .model_list table thead td.tablesorter-headerAsc .icon-sort:before {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .model_list table thead td .filter-wrap {
