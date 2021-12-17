@@ -22,7 +22,7 @@ $(document).ready(function () {
     if ($(".owl-carousel-partners-slider").length > 0) {
         $(".owl-carousel-partners-slider").owlCarousel({
             /*items:9,*/
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: scrollDelayPartners,
             responsive: {
                 0: {

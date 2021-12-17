@@ -2009,16 +2009,29 @@ a.btn_print:hover:before {
     background-image: url(../svg/mp2_arrow_left_white.svg);
 }
 
+.owl-carousel-partners-slider .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.partners-slider-img {
+.owl-carousel-partners-slider .partners-slider-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel-partners-slider .owl-item .partners-slider-img {
     padding: 0 30px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
     transition: 0.3s;
+    width: auto;
+    max-height: 30px;
 }
 
-.partners-slider-img:hover {
+.owl-carousel-partners-slider .partners-slider-img:hover {
     filter: grayscale(0%);
     opacity: 1;
 }
