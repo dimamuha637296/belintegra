@@ -22,7 +22,7 @@ $(document).ready(function () {
     if ($(".owl-carousel-partners-slider").length > 0) {
         $(".owl-carousel-partners-slider").owlCarousel({
             /*items:9,*/
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: scrollDelayPartners,
             responsive: {
                 0: {
@@ -637,10 +637,14 @@ $(document).ready(function () {
                     var headerPosition = header.offset().top;
                     if (headerPosition > headerHeight) {
                         header.addClass('header--scroll');
-                        setMainPadding();
+                        var timeout = setTimeout(function () {
+                            setMainPadding();
+                        }, 200);
                     } else {
                         header.removeClass('header--scroll');
-                        setMainPadding();
+                        var timeout = setTimeout(function () {
+                            setMainPadding();
+                        }, 200);
                     }
                 });
             }
