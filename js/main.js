@@ -5,6 +5,8 @@ $(document).ready(function () {
             items: 1,
             loop: true,
             // nav:true,
+            autoplay: true,
+            autoplayTimeout: 6000,
             navText: ['', ''],
             responsive: {
                 0: {
