@@ -2763,6 +2763,10 @@ a.btn_print:hover:before {
     color: #00679A;
 }
 
+.category_tab img {
+    max-width: 100%;
+}
+
 .examples {
 }
 
